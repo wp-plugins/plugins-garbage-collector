@@ -1,0 +1,57 @@
+=== Plugins Garbage Collector ===
+Contributors: ShinePHP
+Donate link: http://www.shinephp.com/donate/
+Tags: garbage, collector, database, clear, unused tables, cleaner
+Requires at least: 2.9.
+Tested up to: 3.0
+Stable tag: 0.1
+
+
+
+== Description ==
+
+Plugins Garbage Collector scans your WordPress database and shows the tables beyond of core WordPress installation. Some WordPress plugins create and use its own database tables. Those tables are left in your database after plugin deactivation and deletion often. If your blog is more than 1 day old you have some plugins garbage in your WordPress database probably. With the help of this plugin you can check your database and discover if it is clean or not.
+To read more about 'Plugins Garbage Collector' visit this link http://www.shinephp.com/plugins-garbage-collector-wordpress-plugin/
+
+= Translations =
+* Russian: [Vladimir Garagulya](http://shinephp.com)
+
+Dear plugin User!
+If you wish to help me with this plugin translation I very appreciate it. Please send your language .po and .mo files to vladimir[at-sign]shinephp.com email. Do not forget include you site link in order I can show it with greetings for the translation help at shinephp.com, plugin settings page and in this readme.txt file.
+If you have better translation for some phrases, send it to me and it will be taken into consideration. You are welcome!
+
+
+== Installation ==
+
+Installation procedure:
+
+1. Deactivate plugin if you have the previous version installed.
+2. Extract "plugins-garbage-collector.x.x.x.zip" archive content to the "/wp-content/plugins/plugins-garbage-collector" directory.
+3. Activate "Plugins Garbage Collector" plugin via 'Plugins' menu in WordPress admin menu. 
+4. Go to the "Tools"-"Plugins Garbage Collector" menu item and scan your WordPress database if it has some forgotten tables from old plugins.
+
+== Frequently Asked Questions ==
+Comming soon. Just ask it. I will search the answer.
+
+
+== Screenshots ==
+1. screenshot-1.png Plugins Garbage Collector scan action results.
+
+
+== Special Thanks to ==
+You are welcome! Help me with plugin translation, share with me new ideas about its further development and link to your site will appear here.
+
+== Changelog ==
+
+= 0.1 =
+* 29.04.2010
+* 1st pre-release.
+
+== Additional Documentation ==
+
+You can find more information about "Plugins Garbage Collector" plugin at this page
+http://www.shinephp.com/plugins-garbage-collector-wordpress-plugin/
+
+I am ready to answer on your questions about this plugin usage. Use ShinePHP forum at
+http://shinephp.com/community/forum/plugins-garbage-collector/
+or plugin page comments and site contact form for it please.
