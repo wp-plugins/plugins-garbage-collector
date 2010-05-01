@@ -4,8 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: garbage, collector, database, clear, unused tables, cleaner
 Requires at least: 2.9.
 Tested up to: 3.0
-Stable tag: 0.1
-
+Stable tag: 0.2
 
 
 == Description ==
@@ -14,7 +13,10 @@ Plugins Garbage Collector scans your WordPress database and shows the tables bey
 To read more about 'Plugins Garbage Collector' visit this link http://www.shinephp.com/plugins-garbage-collector-wordpress-plugin/
 
 = Translations =
+* French: [Simon](http://saymonz.net)
+* Indonesian: [Masino Sinaga](http://www.openscriptsolution.com)
 * Russian: [Vladimir Garagulya](http://shinephp.com)
+* Spanish: Melvis E. Leon Lopez
 
 Dear plugin User!
 If you wish to help me with this plugin translation I very appreciate it. Please send your language .po and .mo files to vladimir[at-sign]shinephp.com email. Do not forget include you site link in order I can show it with greetings for the translation help at shinephp.com, plugin settings page and in this readme.txt file.
@@ -42,6 +44,11 @@ Comming soon. Just ask it. I will search the answer.
 You are welcome! Help me with plugin translation, share with me new ideas about its further development and link to your site will appear here.
 
 == Changelog ==
+= 0.2 =
+* 01.05.2010
+* French, Indonesian, Spanish translations are added
+* Text domain 'pgc' missing bug is fixed
+
 
 = 0.1 =
 * 29.04.2010
