@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plugins Garbage Collector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-01 07:38+0600\n"
+"POT-Creation-Date: 2010-05-01 20:02+0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: vladimir <vladimir@shinephp.com>\n"
 "Language-Team: saymonz.net <my.n@me.is.saymonz.net>\n"
@@ -54,63 +54,71 @@ msgid "For the help with French translation"
 msgstr "Pour l'aide avec la traduction française"
 
 #: ../pgc-options.php:63
-msgid "For the help with Indonesian translation"
-msgstr ""
+msgid "For the help with German translation"
+msgstr "Pour l'aide avec la traduction allemande"
 
 #: ../pgc-options.php:64
+msgid "For the help with Indonesian translation"
+msgstr "Pour l'aide avec la traduction Indonésien"
+
+#: ../pgc-options.php:65
+msgid "For the help with Japanese translation"
+msgstr "Pour l'aide avec la traduction japonaise"
+
+#: ../pgc-options.php:66
 msgid "For the help with Spanish translation"
 msgstr "Pour l'aide avec la traduction polonais"
 
-#: ../pgc-options.php:65
+#: ../pgc-options.php:67
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "Voudriez vous voir votre nom et un lien vers votre site ici ? Vous êtes le bienvenu ! Votre aide avec les traductions et vos idées sont très appréciées."
 
-#: ../pgc-options.php:74
+#: ../pgc-options.php:76
 msgid "Scanning"
 msgstr "Scan"
 
-#: ../pgc-options.php:78
+#: ../pgc-options.php:80
 msgid "will take some time. Please confirm to continue"
 msgstr "Cela va prendre un moment. Veuillez confirmer pour continuer."
 
-#: ../pgc-options.php:87
+#: ../pgc-options.php:89
 msgid "Cleanup: please confirm to continue"
 msgstr "Nettoyage : veuillez confirmer pour continuer"
 
-#: ../pgc-options.php:95
+#: ../pgc-options.php:97
 msgid "Click &lt;Scan&gt; to gather information how plugins use your WordPress database"
 msgstr "Cliquez sur &lt;Scan&gt; pour collecter les informations sur comment les extensions utilisent votre base de données WordPress"
 
-#: ../pgc-options.php:99
+#: ../pgc-options.php:101
 #: ../plugins-garbage-collector.php:88
 msgid "Scan"
 msgstr "Scan"
 
-#: ../pgc-options.php:107
+#: ../pgc-options.php:109
 msgid "Let's see what tables in your database do not belong to the core WordPress installation:"
 msgstr "Voyons quelles tables de votre base de données n'appartiennent pas au coeur de votre installation WordPress :"
 
-#: ../pgc-options.php:113
+#: ../pgc-options.php:115
 msgid "Table Name"
 msgstr "Nom de la table"
 
-#: ../pgc-options.php:114
+#: ../pgc-options.php:116
 msgid "Records #"
 msgstr "Enregistrements #"
 
-#: ../pgc-options.php:115
+#: ../pgc-options.php:117
 msgid "KBytes #"
 msgstr "KBytes #"
 
-#: ../pgc-options.php:116
+#: ../pgc-options.php:118
 msgid "Plugin Name"
 msgstr "Nom de l'extension"
 
-#: ../pgc-options.php:117
+#: ../pgc-options.php:119
 msgid "Plugin State"
 msgstr "Statut de l'extension"
 
-#: ../pgc-options.php:176
+#: ../pgc-options.php:178
 msgid "Congratulations! It seems that your WordPress database is clean."
 msgstr "Félicitations ! Il semble que votre base de données WordPress soit propre."
 

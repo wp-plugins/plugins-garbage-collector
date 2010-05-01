@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plugins Garbage Collector Indonesian Language\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-01 07:40+0600\n"
+"POT-Creation-Date: 2010-05-01 20:03+0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: vladimir <vladimir@shinephp.com>\n"
 "Language-Team: Masino Sinaga <admin@openscriptsolution.com>\n"
@@ -54,63 +54,71 @@ msgid "For the help with French translation"
 msgstr ""
 
 #: ../pgc-options.php:63
-msgid "For the help with Indonesian translation"
+msgid "For the help with German translation"
 msgstr ""
 
 #: ../pgc-options.php:64
-msgid "For the help with Spanish translation"
+msgid "For the help with Indonesian translation"
 msgstr ""
 
 #: ../pgc-options.php:65
+msgid "For the help with Japanese translation"
+msgstr ""
+
+#: ../pgc-options.php:66
+msgid "For the help with Spanish translation"
+msgstr ""
+
+#: ../pgc-options.php:67
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "Anda ingin melihat nama Anda dengan tautan ke situs Anda di sini? Silahkan! Bantuan terjemahan Anda dan ide baru sangat dihargai."
 
-#: ../pgc-options.php:74
+#: ../pgc-options.php:76
 msgid "Scanning"
 msgstr "Sedang memindai"
 
-#: ../pgc-options.php:78
+#: ../pgc-options.php:80
 msgid "will take some time. Please confirm to continue"
 msgstr "membutuhkan beberapa menit. Konfirmasikan untuk melanjutkan"
 
-#: ../pgc-options.php:87
+#: ../pgc-options.php:89
 msgid "Cleanup: please confirm to continue"
 msgstr "Pembersihan: konfirmasikan untuk melanjutkan"
 
-#: ../pgc-options.php:95
+#: ../pgc-options.php:97
 msgid "Click &lt;Scan&gt; to gather information how plugins use your WordPress database"
 msgstr "Klik &lt;Pindai&gt; untuk mendapatkan informasi bagaiman plugin menggunakan basis data WordPress Anda"
 
-#: ../pgc-options.php:99
+#: ../pgc-options.php:101
 #: ../plugins-garbage-collector.php:88
 msgid "Scan"
 msgstr "Pindai"
 
-#: ../pgc-options.php:107
+#: ../pgc-options.php:109
 msgid "Let's see what tables in your database do not belong to the core WordPress installation:"
 msgstr "Ayo kita lihat tabel apa yang terdapat di basis data Anda yang tidak memiliki ke instalasi utama WordPress:"
 
-#: ../pgc-options.php:113
+#: ../pgc-options.php:115
 msgid "Table Name"
 msgstr "Nama Tabel"
 
-#: ../pgc-options.php:114
+#: ../pgc-options.php:116
 msgid "Records #"
 msgstr "Record #"
 
-#: ../pgc-options.php:115
+#: ../pgc-options.php:117
 msgid "KBytes #"
 msgstr "KBytes #"
 
-#: ../pgc-options.php:116
+#: ../pgc-options.php:118
 msgid "Plugin Name"
 msgstr "Nama Plugin"
 
-#: ../pgc-options.php:117
+#: ../pgc-options.php:119
 msgid "Plugin State"
 msgstr "Status Plugin"
 
-#: ../pgc-options.php:176
+#: ../pgc-options.php:178
 msgid "Congratulations! It seems that your WordPress database is clean."
 msgstr "Selamat! Nampaknya basis data WordPress Anda saat ini bersih."
 
