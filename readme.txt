@@ -43,7 +43,7 @@ Comming soon. Just ask it. I will search the answer.
 
 
 == Special Thanks to ==
-You are welcome! Help me with plugin translation, share with me new ideas about its further development and link to your site will appear here.
+You are welcome! Help me in the bug hunting, share with me new ideas about plugin further development, contribute to the source code and link to your site will appear here.
 
 == Changelog ==
 = 0.3 =
