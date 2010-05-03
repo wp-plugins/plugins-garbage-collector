@@ -72,6 +72,7 @@ function pgc_getNotWordPressTables() {
   $query = "show tables";
   $existingTables = $wpdb->get_col($query);
   foreach ($existingTables as $existingTable) {
+    $existingTable = strtolower($existingTable);
     $legalWPTable = false;
     foreach ($wpTables as $wpTable) {
       if ($wpdb->prefix.$wpTable==$existingTable) {
