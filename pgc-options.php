@@ -1,6 +1,6 @@
 <?php
 /* 
- * Silence Is Golden Guard plugin Settings form
+ * Plugins Garbage Collector main form
  * 
  */
 
@@ -13,12 +13,13 @@ require_once('pgc-lib.php');
 $shinephpFavIcon = PGC_PLUGIN_URL.'/images/vladimir.png';
 $mess = '';
 
+$showScanResults = false;
 if (isset($_REQUEST['action']) && $_REQUEST['action']=='scan') {
   $showScanResults = true;
   $tables = pgc_getNotWordPressTables();
-  scanPluginsForDbTablesUse(&$tables);
-} else {
-  $showScanResults = false;
+  scanPluginsForDbTablesUse(&$tables);  
+} else if (isset($_POST['deleteTableAction'])) {
+  $mess = deleteUnusedTablesFromDB();
 }
 
 // options page display part
@@ -43,7 +44,7 @@ function pgc_displayBoxEnd() {
 pgc_showMessage($mess);
 
 ?>
-  <form method="post" action="options-general.php?page=user-role-editor.php" onsubmit="return pgc_onSubmit();">
+  <form method="post" action="tools.php?page=plugins-garbage-collector.php" onsubmit="return pgc_onSubmit();">
 <?php
     settings_fields('pgc-options');
 ?>
@@ -86,7 +87,20 @@ pgc_showMessage($mess);
   }
 
   function pgc_onSubmit() {
-    if (!confirm('<?php _e('Cleanup: please confirm to continue', 'pgc'); ?>')) {
+    var checkBoxes = new Array();
+    checkBoxes = document.getElementsByTagName('input');
+    var checkedFound = false;
+    for (var i = 0; i < checkBoxes.length; i++) {
+      if (checkBoxes[i].type=='checkbox' && checkBoxes[i].checked) {
+        checkedFound = true;
+        break;
+      }
+    }
+    if (!checkedFound) {
+      alert('<?php _e('Select at least one table before click on Delete button'); ?>');
+      return false;
+    }
+    if (!confirm('<?php _e('Delete database tables last confirmation: Click "Cancel" if you have any doubt.', 'pgc'); ?>')) {
       return false;
     }
   }
@@ -105,12 +119,9 @@ pgc_showMessage($mess);
 ?>
 
 <?php
-  if ($showScanResults) {
-  	_e('Let\'s see what tables in your database do not belong to the core WordPress installation:', 'pgc');
-    if (count($tables)>0) {
+
+function displayColumnHeaders() {
 ?>
-        <table class="widefat" style="clear:none;" cellpadding="0" cellspacing="0">
-          <thead>
             <tr>
               <th><?php _e('Table Name','pgc'); ?></th>
               <th><?php _e('Records #','pgc'); ?></th>
@@ -118,9 +129,23 @@ pgc_showMessage($mess);
               <th><?php _e('Plugin Name','pgc'); ?></th>
               <th><?php _e('Plugin State','pgc'); ?></th>
             </tr>
+<?php
+}
+// end of displayColumnHeaders()
+
+  if ($showScanResults) {
+  	_e('Let\'s see what tables in your database do not belong to the core WordPress installation:', 'pgc');
+    if (count($tables)>0) {
+?>
+        <table class="widefat" style="clear:none;" cellpadding="0" cellspacing="0">
+          <thead>
+<?php
+  displayColumnHeaders();
+?>
           </thead>
           <tbody>
 <?php
+    $showDeleteTablesButton = false;
     $i = 0;
     foreach ($tables as $table) {
       if ($i & 1) {
@@ -133,14 +158,17 @@ pgc_showMessage($mess);
           <tr <?php echo $rowClass; ?> >
             <td style="vertical-align:top;width:100px;" >
 <?php
+  $deleteCheckBox = '';
   if (!$table->plugin_name) {
     $color = 'red';
+    $deleteCheckBox = '<input type="checkbox" name="delete_'.$table->name.'" />';
+    $showDeleteTablesButton = true;
   } else if ($table->plugin_state=='active') {
     $color = 'green';
   } else {
     $color = 'blue';
   }
-echo '<span style="color:'.$color.';">'.$table->name.'</span>';
+echo $deleteCheckBox.' <span style="color:'.$color.';">'.$table->name.'</span>';
 
 ?>
             </td>
@@ -169,8 +197,29 @@ echo '<span style="color:'.$color.';">'.$table->name.'</span>';
     }
 ?>
           </tbody>
+          <tfoot>
+<?php
+  displayColumnHeaders();
+?>
+          </tfoot>
       </table>                                             
 <?php
+      if ($showDeleteTablesButton) {
+?>
+      <table>
+        <tr>
+          <td>
+            <div class="submit">
+              <input type="submit" name="deleteTableAction" value="Delete Tables"/>
+            </div>
+          </td>
+          <td>
+            <div style="padding-left: 10px;"><span style="color: red; font-weight: bold;">Attention!</span> Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Tables</code> button.</div>
+          </td>
+        </tr>
+      </table>
+<?php
+      }
     } else {
       pgc_displayBoxStart();
 ?>

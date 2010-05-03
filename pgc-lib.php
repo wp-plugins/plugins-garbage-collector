@@ -156,4 +156,39 @@ function scanPluginsForDbTablesUse(&$tables) {
 }
 // end of scanPluginsForDbTables()
 
+
+function deleteUnusedTablesFromDB() {
+  global $wpdb;
+
+  $tablesToDelete = array();
+  foreach ($_POST as $key=>$value) {
+    if (strpos($key, 'delete_')!==false) {
+      $tablesToDelete[] = substr($key, 7);
+    }
+  }
+  if (count($tablesToDelete)==0) {
+    return;
+  }
+
+  $dbName = DB_NAME;
+  $actionResult = '';
+  foreach($tablesToDelete as $tableToDelete) {
+    if ($actionResult) {
+      $actionResult .= ', ';
+    }
+    $query = "drop table `$dbName`.`$tableToDelete`";
+    $wpdb->query($query);
+    if ($wpdb->last_error) {
+      if ($actionResult) {
+        $actionResult = 'Tables are deleted: '.$actionResult;
+      }
+      return $actionResult.'<br/>'.$wpdb->last_error;
+    }
+    $actionResult .= ' '.$tableToDelete;
+  }
+
+  return 'Tables are deleted successfully: '.$actionResult;
+}
+// end of deleteUnusedTablesFromDB()
+
 ?>

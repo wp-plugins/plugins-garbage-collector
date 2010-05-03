@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plugins Garbage Collector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-01 20:00+0600\n"
+"POT-Creation-Date: 2010-05-03 07:46+0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: vladimir <vladimir@shinephp.com>\n"
 "Language-Team: MLL Designs <me_leon@hotmail.com>\n"
@@ -16,109 +16,113 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../pgc-options.php:53
+#: ../pgc-options.php:54
 msgid "About this Plugin:"
 msgstr "Acerca de este plugin:"
 
-#: ../pgc-options.php:54
+#: ../pgc-options.php:55
 msgid "Author's website"
 msgstr "Website del autor"
 
-#: ../pgc-options.php:55
+#: ../pgc-options.php:56
 msgid "Plugin webpage"
 msgstr "Página del plugin"
 
-#: ../pgc-options.php:56
+#: ../pgc-options.php:57
 #: ../plugins-garbage-collector.php:98
 msgid "Changelog"
 msgstr "Historial de cambios"
 
-#: ../pgc-options.php:57
+#: ../pgc-options.php:58
 msgid "FAQ"
 msgstr "FAQ"
 
-#: ../pgc-options.php:58
+#: ../pgc-options.php:59
 msgid "Donate"
 msgstr "Donar"
 
-#: ../pgc-options.php:60
+#: ../pgc-options.php:61
 msgid "Greetings:"
 msgstr "Saludos:"
 
-#: ../pgc-options.php:61
+#: ../pgc-options.php:62
 msgid "It's me, the author"
 msgstr "Soy yo, el autor"
 
-#: ../pgc-options.php:62
+#: ../pgc-options.php:63
 msgid "For the help with French translation"
 msgstr "Por la ayuda con la traducción al Francés"
 
-#: ../pgc-options.php:63
+#: ../pgc-options.php:64
 msgid "For the help with German translation"
 msgstr "Por la ayuda con la traducción al alemán"
 
-#: ../pgc-options.php:64
+#: ../pgc-options.php:65
 msgid "For the help with Indonesian translation"
 msgstr "Por la ayuda con la traducción al Indonesio"
 
-#: ../pgc-options.php:65
+#: ../pgc-options.php:66
 msgid "For the help with Japanese translation"
 msgstr "Por la ayuda con la traducción al Japonés"
 
-#: ../pgc-options.php:66
+#: ../pgc-options.php:67
 msgid "For the help with Spanish translation"
 msgstr "Por la ayuda con la traducción al Español"
 
-#: ../pgc-options.php:67
+#: ../pgc-options.php:68
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "¿Deseas ver tu nombre con enlace a tu sitio en esta lista? Eres bienvenido! Tu ayuda con la traducción y las nuevas ideas son muy apreciadas."
 
-#: ../pgc-options.php:76
+#: ../pgc-options.php:77
 msgid "Scanning"
 msgstr "Escaneando"
 
-#: ../pgc-options.php:80
+#: ../pgc-options.php:81
 msgid "will take some time. Please confirm to continue"
 msgstr "esto tomará algún tiempo. Por favor, confirme para continuar"
 
-#: ../pgc-options.php:89
-msgid "Cleanup: please confirm to continue"
-msgstr "Limpiar: por favor confirme para continuar"
+#: ../pgc-options.php:100
+msgid "Select at least one table before click on Delete button"
+msgstr ""
 
-#: ../pgc-options.php:97
+#: ../pgc-options.php:103
+msgid "Delete database tables last confirmation: Click \"Cancel\" if you have any doubt."
+msgstr ""
+
+#: ../pgc-options.php:111
 msgid "Click &lt;Scan&gt; to gather information how plugins use your WordPress database"
 msgstr "Haga clic en <Escanear> para obtener información de cómo los plugins utilizan la base de datos de WordPress"
 
-#: ../pgc-options.php:101
+#: ../pgc-options.php:115
 #: ../plugins-garbage-collector.php:88
 msgid "Scan"
 msgstr "Escanear"
 
-#: ../pgc-options.php:109
-msgid "Let's see what tables in your database do not belong to the core WordPress installation:"
-msgstr "WordPress:"
-
-#: ../pgc-options.php:115
+#: ../pgc-options.php:126
 msgid "Table Name"
 msgstr "Nombre de la tabla"
 
-#: ../pgc-options.php:116
+#: ../pgc-options.php:127
 msgid "Records #"
 msgstr "Registros"
 
-#: ../pgc-options.php:117
+#: ../pgc-options.php:128
 msgid "KBytes #"
 msgstr "KBytes"
 
-#: ../pgc-options.php:118
+#: ../pgc-options.php:129
 msgid "Plugin Name"
 msgstr "Nombre del plugin"
 
-#: ../pgc-options.php:119
+#: ../pgc-options.php:130
 msgid "Plugin State"
 msgstr "Estado del plugin"
 
-#: ../pgc-options.php:178
+#: ../pgc-options.php:137
+msgid "Let's see what tables in your database do not belong to the core WordPress installation:"
+msgstr "WordPress:"
+
+#: ../pgc-options.php:227
 msgid "Congratulations! It seems that your WordPress database is clean."
 msgstr "Felicitaciones! Al parecer la base de datos de Wordpress está limpia."
 
@@ -134,6 +138,8 @@ msgstr " requiere WordPress 2.9 en adelante."
 msgid "Please update!"
 msgstr "Por favor actualice!"
 
+#~ msgid "Cleanup: please confirm to continue"
+#~ msgstr "Limpiar: por favor confirme para continuar"
 #~ msgid "Action Page"
 #~ msgstr "Страница действий"
 
