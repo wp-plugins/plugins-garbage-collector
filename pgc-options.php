@@ -63,6 +63,7 @@ pgc_showMessage($mess);
                       <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/simon.png'; ?>);" target="_blank" title="<?php _e("For the help with French translation",'pgc');?>" href="http://saymonz.net">Simon</a>
                       <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/christian.png'; ?>);" target="_blank" title="<?php _e("For the help with German translation",'pgc');?>" href="http://www.irc-junkie.org">Christian</a>
                       <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/masino.png'; ?>);" target="_blank" title="<?php _e("For the help with Indonesian translation",'pgc');?>" href="http://www.openscriptsolution.com">Masino Sinaga</a>
+                      <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/alessandro.png'; ?>);" target="_blank" title="<?php _e("For the help with Italian translation",'pgc');?>" href="http://technodin.org">Alessandro Mariani</a>
                       <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/yoichi.png'; ?>);" target="_blank" title="<?php _e("For the help with Japanese translation",'pgc');?>" href="http://www.ad-minister.net">Yoichi</a>
                       <a class="pgc_rsb_link" target="_blank" title="<?php _e("For the help with Spanish translation",'pgc');?>" >Melvis E. Leon Lopez</a>
 											<?php _e('Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated.','pgc'); ?>
@@ -97,7 +98,7 @@ pgc_showMessage($mess);
       }
     }
     if (!checkedFound) {
-      alert('<?php _e('Select at least one table before click on Delete button'); ?>');
+      alert('<?php _e('Select at least one table before click on Delete button', 'pgc'); ?>');
       return false;
     }
     if (!confirm('<?php _e('Delete database tables last confirmation: Click "Cancel" if you have any doubt.', 'pgc'); ?>')) {
@@ -210,11 +211,11 @@ echo $deleteCheckBox.' <span style="color:'.$color.';">'.$table->name.'</span>';
         <tr>
           <td>
             <div class="submit">
-              <input type="submit" name="deleteTableAction" value="Delete Tables"/>
+              <input type="submit" name="deleteTableAction" value="<?php _e('Delete Tables', 'pgc'); ?>"/>
             </div>
           </td>
           <td>
-            <div style="padding-left: 10px;"><span style="color: red; font-weight: bold;">Attention!</span> Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Tables</code> button.</div>
+            <div style="padding-left: 10px;"><span style="color: red; font-weight: bold;"><?php _e('Attention!','pgc'); ?></span> <?php _e('Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Tables</code> button.','pgc'); ?></div>
           </td>
         </tr>
       </table>

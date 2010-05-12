@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plugins Garbage Collector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-03 07:47+0600\n"
+"POT-Creation-Date: 2010-05-12 21:28+0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: vladimir <vladimir@shinephp.com>\n"
 "Language-Team: yoichi <www.ad-minister.net/mail/>\n"
@@ -62,67 +62,83 @@ msgid "For the help with Indonesian translation"
 msgstr "インドネシア語翻訳のヘルプには"
 
 #: ../pgc-options.php:66
+msgid "For the help with Italian translation"
+msgstr ""
+
+#: ../pgc-options.php:67
 msgid "For the help with Japanese translation"
 msgstr "日本語翻訳"
 
-#: ../pgc-options.php:67
+#: ../pgc-options.php:68
 msgid "For the help with Spanish translation"
 msgstr "スペイン語翻訳のヘルプには"
 
-#: ../pgc-options.php:68
+#: ../pgc-options.php:69
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "翻訳や新しいアイデアへのサポートをしていただいた方には、こちらにお名前とサイトへのリンクを掲載しています。皆様からのご協力をお待ちしています。"
 
-#: ../pgc-options.php:77
+#: ../pgc-options.php:78
 msgid "Scanning"
 msgstr "スキャン中"
 
-#: ../pgc-options.php:81
+#: ../pgc-options.php:82
 msgid "will take some time. Please confirm to continue"
 msgstr "しばらく時間がかかります。続けるにはOKをクリック。"
 
-#: ../pgc-options.php:100
+#: ../pgc-options.php:101
 msgid "Select at least one table before click on Delete button"
 msgstr ""
 
-#: ../pgc-options.php:103
+#: ../pgc-options.php:104
 msgid "Delete database tables last confirmation: Click \"Cancel\" if you have any doubt."
 msgstr ""
 
-#: ../pgc-options.php:111
+#: ../pgc-options.php:112
 msgid "Click &lt;Scan&gt; to gather information how plugins use your WordPress database"
 msgstr "&lt;スキャンする&gt;をクリックして、プラグインがワードプレスのデータベースをどのように使っているかの情報を収集。"
 
-#: ../pgc-options.php:115
+#: ../pgc-options.php:116
 #: ../plugins-garbage-collector.php:88
 msgid "Scan"
 msgstr "スキャンする"
 
-#: ../pgc-options.php:126
+#: ../pgc-options.php:127
 msgid "Table Name"
 msgstr "テーブル名"
 
-#: ../pgc-options.php:127
+#: ../pgc-options.php:128
 msgid "Records #"
 msgstr "レコード #"
 
-#: ../pgc-options.php:128
+#: ../pgc-options.php:129
 msgid "KBytes #"
 msgstr "キロバイト #"
 
-#: ../pgc-options.php:129
+#: ../pgc-options.php:130
 msgid "Plugin Name"
 msgstr "プラグイン名"
 
-#: ../pgc-options.php:130
+#: ../pgc-options.php:131
 msgid "Plugin State"
 msgstr "プラグインの状態"
 
-#: ../pgc-options.php:137
+#: ../pgc-options.php:138
 msgid "Let's see what tables in your database do not belong to the core WordPress installation:"
 msgstr "プラグインによって追加されたデータベースのテーブル："
 
-#: ../pgc-options.php:227
+#: ../pgc-options.php:214
+msgid "Delete Tables"
+msgstr ""
+
+#: ../pgc-options.php:218
+msgid "Attention!"
+msgstr ""
+
+#: ../pgc-options.php:218
+msgid "Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Tables</code> button."
+msgstr ""
+
+#: ../pgc-options.php:228
 msgid "Congratulations! It seems that your WordPress database is clean."
 msgstr "おめでとうございます！あなたのデーtベースはクリーンです。"
 

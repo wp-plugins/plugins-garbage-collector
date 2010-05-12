@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plugins Garbage Collector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-02 21:21+0600\n"
+"POT-Creation-Date: 2010-05-12 21:28+0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: vladimir <vladimir@shinephp.com>\n"
 "Language-Team: ShinePHP.com <vladimir@shinephp.com>\n"
@@ -62,67 +62,83 @@ msgid "For the help with Indonesian translation"
 msgstr "За помощь с индонезийским переводом"
 
 #: ../pgc-options.php:66
+msgid "For the help with Italian translation"
+msgstr "За помощь с итальянским переводом"
+
+#: ../pgc-options.php:67
 msgid "For the help with Japanese translation"
 msgstr "За помощь с японским переводом"
 
-#: ../pgc-options.php:67
+#: ../pgc-options.php:68
 msgid "For the help with Spanish translation"
 msgstr "За помощь с испанским переводом"
 
-#: ../pgc-options.php:68
+#: ../pgc-options.php:69
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "Желаете увидеть здесь свое имя и ссылку на ваш сайт? Добро пожаловать! Ваша помощь с переводом и новые идеи будут как нельзя кстати."
 
-#: ../pgc-options.php:77
+#: ../pgc-options.php:78
 msgid "Scanning"
 msgstr "Сканирование"
 
-#: ../pgc-options.php:81
+#: ../pgc-options.php:82
 msgid "will take some time. Please confirm to continue"
 msgstr "займет некоторое время. Подтверждите, пожалуйста, чтобы продолжить"
 
-#: ../pgc-options.php:100
+#: ../pgc-options.php:101
 msgid "Select at least one table before click on Delete button"
 msgstr "Выберите по крайней мере одну таблицу перед щелчком по клавише Delete"
 
-#: ../pgc-options.php:103
+#: ../pgc-options.php:104
 msgid "Delete database tables last confirmation: Click \"Cancel\" if you have any doubt."
 msgstr "Последней подтверждение перед операций удаления таблиц из базы данных: Щелкните \"Отмена\", если не уверены."
 
-#: ../pgc-options.php:111
+#: ../pgc-options.php:112
 msgid "Click &lt;Scan&gt; to gather information how plugins use your WordPress database"
 msgstr "Щелкните &lt;Сканирование&gt;, чтобы собрать информацию о том, как плагины используют базу данных вашего WordPress"
 
-#: ../pgc-options.php:115
+#: ../pgc-options.php:116
 #: ../plugins-garbage-collector.php:88
 msgid "Scan"
 msgstr "Сканирование"
 
-#: ../pgc-options.php:126
+#: ../pgc-options.php:127
 msgid "Table Name"
 msgstr "Название таблицы"
 
-#: ../pgc-options.php:127
+#: ../pgc-options.php:128
 msgid "Records #"
 msgstr "Записей #"
 
-#: ../pgc-options.php:128
+#: ../pgc-options.php:129
 msgid "KBytes #"
 msgstr "Килобайт #"
 
-#: ../pgc-options.php:129
+#: ../pgc-options.php:130
 msgid "Plugin Name"
 msgstr "Название плагина"
 
-#: ../pgc-options.php:130
+#: ../pgc-options.php:131
 msgid "Plugin State"
 msgstr "Состояние плагина"
 
-#: ../pgc-options.php:137
+#: ../pgc-options.php:138
 msgid "Let's see what tables in your database do not belong to the core WordPress installation:"
 msgstr "Давайте посмотрим, какие таблицы в вашей базе данных не принадлежат основной установке WordPress:"
 
-#: ../pgc-options.php:227
+#: ../pgc-options.php:214
+msgid "Delete Tables"
+msgstr "Удалить Таблицы"
+
+#: ../pgc-options.php:218
+msgid "Attention!"
+msgstr "Внимание!"
+
+#: ../pgc-options.php:218
+msgid "Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Tables</code> button."
+msgstr "Откат операции не возможен. Сделайте резервную копию базы данных сначала. Пожалуйста, хорошо подумайте перед щелчком по кнопке <code>Удалить Таблицы</code>"
+
+#: ../pgc-options.php:228
 msgid "Congratulations! It seems that your WordPress database is clean."
 msgstr "Поздравляем! Похоже, что ваша WordPress база данных чиста."
 

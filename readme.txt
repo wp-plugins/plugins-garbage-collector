@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: garbage, collector, database, clear, unused tables, cleaner
 Requires at least: 2.9.
 Tested up to: 3.0
-Stable tag: 0.4
+Stable tag: 0.5
 
 
 == Description ==
@@ -16,6 +16,7 @@ To read more about 'Plugins Garbage Collector' visit this link http://www.shinep
 * French: [Simon](http://saymonz.net)
 * German: [Christian](http://www.irc-junkie.org)
 * Indonesian: [Masino Sinaga](http://www.openscriptsolution.com)
+* Italian: [Alessandro Mariani](http://technodin.org)
 * Japanese: [Yoichi](http://www.ad-minister.net)
 * Russian: [Vladimir Garagulya](http://shinephp.com)
 * Spanish: Melvis E. Leon Lopez
@@ -47,6 +48,11 @@ Comming soon. Just ask it. I will search the answer.
 You are welcome! Help me in the bug hunting, share with me new ideas about plugin further development, contribute to the source code and link to your site will appear here.
 
 == Changelog ==
+= 0.5 =
+* 12.05.2010
+* Italian translation is added
+* Lost translation domain inserted into a few places in the source code. Translators a welcome to update their work :).
+
 = 0.4 =
 * 03.05.2010
 * "Delete Tables" button is added
