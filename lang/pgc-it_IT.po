@@ -83,7 +83,7 @@ msgstr "Esaminando"
 
 #: ../pgc-options.php:82
 msgid "will take some time. Please confirm to continue"
-msgstr "ci vorrà un po di tempo. Per favore conferma per continuare"
+msgstr "ci vorrà un po\\' di tempo. Per favore conferma per continuare"
 
 #: ../pgc-options.php:101
 msgid "Select at least one table before click on Delete button"
@@ -91,7 +91,7 @@ msgstr "Seleziona almeno una tabella prima di cliccare sul tasto Elimina"
 
 #: ../pgc-options.php:104
 msgid "Delete database tables last confirmation: Click \"Cancel\" if you have any doubt."
-msgstr "Ultima conferma per l eliminazione delle tabelle del database: Clicca \"Cancella\" se hai qualche dubbio."
+msgstr "Ultima conferma per l\\'eliminazione delle tabelle del database: Clicca \"Cancella\" se hai qualche dubbio."
 
 #: ../pgc-options.php:112
 msgid "Click &lt;Scan&gt; to gather information how plugins use your WordPress database"
