@@ -48,7 +48,8 @@ Comming soon. Just ask it. I will search the answer.
 You are welcome! Help me in the bug hunting, share with me new ideas about plugin further development, contribute to the source code and link to your site will appear here.
 
 == Changelog ==
-0.5.1
+
+= 0.5.1 =
 14.05.2010
 * German translation is updated
 
