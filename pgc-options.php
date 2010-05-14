@@ -15,9 +15,11 @@ $mess = '';
 
 $showScanResults = false;
 if (isset($_REQUEST['action']) && $_REQUEST['action']=='scan') {
+  $time0 = time();
   $showScanResults = true;
   $tables = pgc_getNotWordPressTables();
-  scanPluginsForDbTablesUse(&$tables);  
+  scanPluginsForDbTablesUse(&$tables);
+  $time1 = time();
 } else if (isset($_POST['deleteTableAction'])) {
   $mess = deleteUnusedTablesFromDB();
 }
@@ -137,6 +139,7 @@ function displayColumnHeaders() {
   if ($showScanResults) {
   	_e('Let\'s see what tables in your database do not belong to the core WordPress installation:', 'pgc');
     if (count($tables)>0) {
+      //echo ' '.number_format($time1-$time0, 2).' sec.';
 ?>
         <table class="widefat" style="clear:none;" cellpadding="0" cellspacing="0">
           <thead>
