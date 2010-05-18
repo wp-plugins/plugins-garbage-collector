@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: garbage, collector, database, clear, unused tables, cleaner
 Requires at least: 2.9.
 Tested up to: 3.0
-Stable tag: 0.5.1
+Stable tag: 0.5.2
 
 
 == Description ==
@@ -48,6 +48,10 @@ Comming soon. Just ask it. I will search the answer.
 You are welcome! Help me in the bug hunting, share with me new ideas about plugin further development, contribute to the source code and link to your site will appear here.
 
 == Changelog ==
+
+= 0.5.2 =
+* 18.05.2010
+* Italian translation is updated
 
 = 0.5.1 =
 * 14.05.2010
