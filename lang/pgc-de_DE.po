@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plugins Garbage Collector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-14 21:01+0600\n"
+"POT-Creation-Date: 2010-05-24 21:29+0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: vladimir <vladimir@shinephp.com>\n"
 "Language-Team: Christian Lederer <tips@irc-junkie.org>\n"
@@ -74,71 +74,75 @@ msgid "For the help with Spanish translation"
 msgstr "Hilfe bei der Übersetzung ins Spanische"
 
 #: ../pgc-options.php:71
+msgid "For the help with Dutch translation"
+msgstr "Hilfe bei der Übersetzung ins Niederländisch"
+
+#: ../pgc-options.php:72
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "Möchten Sie hier Ihren Namen und einen Link zu Ihrer Seite sehen? Sehr gerne! Ihre Hilfe bei der Übersetzung und neuen Ideen für das Plugin sind herzlich willkommen."
 
-#: ../pgc-options.php:80
+#: ../pgc-options.php:81
 msgid "Scanning"
 msgstr "Durchsuchen"
 
-#: ../pgc-options.php:84
+#: ../pgc-options.php:85
 msgid "will take some time. Please confirm to continue"
 msgstr "dauert einige Zeit. Bitte bestätigen um fortzusetzen"
 
-#: ../pgc-options.php:103
+#: ../pgc-options.php:104
 msgid "Select at least one table before click on Delete button"
 msgstr "Bitte wählen Sie mindestens eine Tabelle aus bevor Sie Löschen klicken"
 
-#: ../pgc-options.php:106
+#: ../pgc-options.php:107
 msgid "Delete database tables last confirmation: Click \"Cancel\" if you have any doubt."
 msgstr "Letzte Bestätigung bevor Datenbank-Tabellen gelöscht werden: Klicken Sie \"Cancel\" wenn Sie Zweifel haben."
 
-#: ../pgc-options.php:114
+#: ../pgc-options.php:115
 msgid "Click &lt;Scan&gt; to gather information how plugins use your WordPress database"
 msgstr "Klicken Sie &lt;Scan&gt; um Informationen über Plugin-Daten in Ihrer WordPress-Datenbank zu sammeln"
 
-#: ../pgc-options.php:118
+#: ../pgc-options.php:119
 #: ../plugins-garbage-collector.php:88
 msgid "Scan"
 msgstr "Scan"
 
-#: ../pgc-options.php:129
+#: ../pgc-options.php:130
 msgid "Table Name"
 msgstr "Tabellen Name"
 
-#: ../pgc-options.php:130
+#: ../pgc-options.php:131
 msgid "Records #"
 msgstr "Einträge #"
 
-#: ../pgc-options.php:131
+#: ../pgc-options.php:132
 msgid "KBytes #"
 msgstr "KBytes #"
 
-#: ../pgc-options.php:132
+#: ../pgc-options.php:133
 msgid "Plugin Name"
 msgstr "Plugin-Name"
 
-#: ../pgc-options.php:133
+#: ../pgc-options.php:134
 msgid "Plugin State"
 msgstr "Plugin-Status"
 
-#: ../pgc-options.php:140
+#: ../pgc-options.php:141
 msgid "Let's see what tables in your database do not belong to the core WordPress installation:"
 msgstr "Sehen wir nach welche Tabellen in Ihrer Datenbank nicht zum Kern der WordPress Installation gehören:"
 
-#: ../pgc-options.php:217
+#: ../pgc-options.php:218
 msgid "Delete Tables"
 msgstr "Tabellen löschen"
 
-#: ../pgc-options.php:221
+#: ../pgc-options.php:222
 msgid "Attention!"
 msgstr "Achtung!"
 
-#: ../pgc-options.php:221
+#: ../pgc-options.php:222
 msgid "Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Tables</code> button."
 msgstr "Wiederherstellen ist nicht möglich. Bitte machen Sie zuerst ein Datenbank-Backup und überlegen Sie zwei mal bevor Sie den <code>Tabellen löschen</code> Button klicken."
 
-#: ../pgc-options.php:231
+#: ../pgc-options.php:232
 msgid "Congratulations! It seems that your WordPress database is clean."
 msgstr "Gratulation! Anscheinend ist Ihre WordPress-Datenbank sauber."
 

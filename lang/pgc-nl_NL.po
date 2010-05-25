@@ -2,15 +2,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plugins Garbage Collector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-24 21:30+0600\n"
+"POT-Creation-Date: 2010-05-24 21:36+0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: vladimir <vladimir@shinephp.com>\n"
-"Language-Team: MLL Designs <me_leon@hotmail.com>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Spanish\n"
-"X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
@@ -18,133 +16,133 @@ msgstr ""
 
 #: ../pgc-options.php:56
 msgid "About this Plugin:"
-msgstr "Acerca de este plugin:"
+msgstr "Over deze Plugin:"
 
 #: ../pgc-options.php:57
 msgid "Author's website"
-msgstr "Website del autor"
+msgstr "Website auteur"
 
 #: ../pgc-options.php:58
 msgid "Plugin webpage"
-msgstr "Página del plugin"
+msgstr "Plugin webpagina"
 
 #: ../pgc-options.php:59
 #: ../plugins-garbage-collector.php:98
 msgid "Changelog"
-msgstr "Historial de cambios"
+msgstr "Veranderingen"
 
 #: ../pgc-options.php:60
 msgid "FAQ"
-msgstr "FAQ"
+msgstr "Veel gestelde vragen"
 
 #: ../pgc-options.php:61
 msgid "Donate"
-msgstr "Donar"
+msgstr "Bijdrage"
 
 #: ../pgc-options.php:63
 msgid "Greetings:"
-msgstr "Saludos:"
+msgstr "Welkom: "
 
 #: ../pgc-options.php:64
 msgid "It's me, the author"
-msgstr "Soy yo, el autor"
+msgstr "Ik ben het, de auteur"
 
 #: ../pgc-options.php:65
 msgid "For the help with French translation"
-msgstr "Por la ayuda con la traducción al Francés"
+msgstr "Voor hulp bij de Franse vertaling"
 
 #: ../pgc-options.php:66
 msgid "For the help with German translation"
-msgstr "Por la ayuda con la traducción al alemán"
+msgstr "Voor hulp bij de Duitse vertaling"
 
 #: ../pgc-options.php:67
 msgid "For the help with Indonesian translation"
-msgstr "Por la ayuda con la traducción al Indonesio"
+msgstr "Voor hulp bij de Indonesische vertaling"
 
 #: ../pgc-options.php:68
 msgid "For the help with Italian translation"
-msgstr "Por la ayuda con la traducción al Italiano"
+msgstr "Voor hulp bij de Italiaanse vertaling"
 
 #: ../pgc-options.php:69
 msgid "For the help with Japanese translation"
-msgstr "Por la ayuda con la traducción al Japonés"
+msgstr "Voor hulp bij de Japanse vertaling"
 
 #: ../pgc-options.php:70
 msgid "For the help with Spanish translation"
-msgstr "Por la ayuda con la traducción al Español"
+msgstr "Voor de hulp bij de Spaanse vertaling"
 
 #: ../pgc-options.php:71
 msgid "For the help with Dutch translation"
-msgstr "Por la ayuda con la traducción al Neerlandesa"
+msgstr "Voor hulp bij de Nederlandse vertaling"
 
 #: ../pgc-options.php:72
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
-msgstr "¿Deseas ver tu nombre con enlace a tu sitio en esta lista? Eres bienvenido! Tu ayuda con la traducción y las nuevas ideas son muy apreciadas."
+msgstr "Je naam met een link naar je website hier? Hulp is welkom! Jouw hulp met vertalen en nieuwe ideeën zijn welkom."
 
 #: ../pgc-options.php:81
 msgid "Scanning"
-msgstr "Escaneando"
+msgstr "Scannen"
 
 #: ../pgc-options.php:85
 msgid "will take some time. Please confirm to continue"
-msgstr "esto tomará algún tiempo. Por favor, confirme para continuar"
+msgstr "Neemt enige tijd. Bevestig om door te gaan"
 
 #: ../pgc-options.php:104
 msgid "Select at least one table before click on Delete button"
-msgstr "Seleccione al menos una tabla antes de hacer clic en el botón Borrar"
+msgstr "Kies tenminste één tabel voor het klikken op Verwijder knop"
 
 #: ../pgc-options.php:107
 msgid "Delete database tables last confirmation: Click \"Cancel\" if you have any doubt."
-msgstr "Ultima confirmación antes de borrar las tablas de la base de datos. Clic \"Cancelar\" si no está seguro."
+msgstr "Verwijderen tabellen laatste bevestiging: Clik \"Cancel\" als u twijfelt."
 
 #: ../pgc-options.php:115
 msgid "Click &lt;Scan&gt; to gather information how plugins use your WordPress database"
-msgstr "Haga clic en <Escanear> para obtener información de cómo los plugins utilizan la base de datos de WordPress"
+msgstr "Klik &lt;Scan&gt; om infomatie te verzamelen hoe plugins jouw database gebruiken"
 
 #: ../pgc-options.php:119
 #: ../plugins-garbage-collector.php:88
 msgid "Scan"
-msgstr "Escanear"
+msgstr "Scan"
 
 #: ../pgc-options.php:130
 msgid "Table Name"
-msgstr "Nombre de la tabla"
+msgstr "Tabel naam"
 
 #: ../pgc-options.php:131
 msgid "Records #"
-msgstr "Registros"
+msgstr "Records #"
 
 #: ../pgc-options.php:132
 msgid "KBytes #"
-msgstr "KBytes"
+msgstr "KBytes #"
 
 #: ../pgc-options.php:133
 msgid "Plugin Name"
-msgstr "Nombre del plugin"
+msgstr "Plugin naam"
 
 #: ../pgc-options.php:134
 msgid "Plugin State"
-msgstr "Estado del plugin"
+msgstr "Plugin Status"
 
 #: ../pgc-options.php:141
 msgid "Let's see what tables in your database do not belong to the core WordPress installation:"
-msgstr "WordPress:"
+msgstr "Welke tabellen in jouw database behoren niet tot de core WordPress installatie:"
 
 #: ../pgc-options.php:218
 msgid "Delete Tables"
-msgstr ""
+msgstr "Verwijder tabellen"
 
 #: ../pgc-options.php:222
 msgid "Attention!"
-msgstr ""
+msgstr "Opgelet!"
 
 #: ../pgc-options.php:222
 msgid "Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Tables</code> button."
-msgstr ""
+msgstr "Terugzetten of herstel is niet mogelijk, Maak eerst een database backup, Denk twee keer na voor het klikken op <code>Verwijder tabellen</code> knop."
 
 #: ../pgc-options.php:232
 msgid "Congratulations! It seems that your WordPress database is clean."
-msgstr "Felicitaciones! Al parecer la base de datos de Wordpress está limpia."
+msgstr "Gefelicieerd! het lijkt erop dat jouw WordPress database schoon is."
 
 #: ../plugins-garbage-collector.php:41
 msgid "Plugins Garbage Collector"
@@ -152,14 +150,12 @@ msgstr "Plugins Garbage Collector"
 
 #: ../plugins-garbage-collector.php:43
 msgid " requires WordPress 2.9 or newer."
-msgstr " requiere WordPress 2.9 en adelante."
+msgstr " vereist  WordPress 2.9 of nieuwer."
 
 #: ../plugins-garbage-collector.php:43
 msgid "Please update!"
-msgstr "Por favor actualice!"
+msgstr "Updaten aub!"
 
 #~ msgid "Cleanup: please confirm to continue"
-#~ msgstr "Limpiar: por favor confirme para continuar"
-#~ msgid "Action Page"
-#~ msgstr "Страница действий"
+#~ msgstr "Cleanuo: Bevestig om door te gaan"
 

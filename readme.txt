@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: garbage, collector, database, clear, unused tables, cleaner
 Requires at least: 2.9.
 Tested up to: 3.0
-Stable tag: 0.5.2
+Stable tag: 0.6
 
 
 == Description ==
@@ -13,6 +13,7 @@ Plugins Garbage Collector scans your WordPress database and shows the tables bey
 To read more about 'Plugins Garbage Collector' visit this link http://www.shinephp.com/plugins-garbage-collector-wordpress-plugin/
 
 = Translations =
+* Dutch: [Arthur](http://www.vdmolen.org)
 * French: [Simon](http://saymonz.net)
 * German: [Christian](http://www.irc-junkie.org)
 * Indonesian: [Masino Sinaga](http://www.openscriptsolution.com)
@@ -48,6 +49,10 @@ Comming soon. Just ask it. I will search the answer.
 You are welcome! Help me in the bug hunting, share with me new ideas about plugin further development, contribute to the source code and link to your site will appear here.
 
 == Changelog ==
+
+= 0.6 =
+* 25.05.2010
+* Dutch translation is added
 
 = 0.5.2 =
 * 18.05.2010
