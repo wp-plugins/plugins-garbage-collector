@@ -56,6 +56,9 @@ You are welcome! Help me in the bug hunting, share with me new ideas about plugi
 * You can search extra columns in the core WordPress tables, which could be added by plugins.
 * Chech translation is added
 
+= 0.6 = 
+* 25.05.2010
+* Dutch translation is updated.
 
 = 0.5.2 =
 * 18.05.2010
