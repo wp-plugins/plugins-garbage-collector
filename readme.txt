@@ -4,16 +4,17 @@ Donate link: http://www.shinephp.com/donate/
 Tags: garbage, collector, database, clear, unused tables, cleaner
 Requires at least: 2.9.
 Tested up to: 3.0
-Stable tag: 0.6
+Stable tag: 0.9
 
 
 == Description ==
 
 Plugins Garbage Collector scans your WordPress database and shows the tables beyond of core WordPress installation. Some WordPress plugins create and use its own database tables. Those tables are left in your database after plugin deactivation and deletion often. If your blog is more than 1 day old you have some plugins garbage in your WordPress database probably. With the help of this plugin you can check your database and discover if it is clean or not.
+Extra columns added to the core WordPress tables could be shown also.
 To read more about 'Plugins Garbage Collector' visit this link http://www.shinephp.com/plugins-garbage-collector-wordpress-plugin/
 
 = Translations =
-* Dutch: [Arthur](http://www.vdmolen.org)
+* Chech: [Jindřich "Masterbill" Rubeš](http://rubes.eu)
 * French: [Simon](http://saymonz.net)
 * German: [Christian](http://www.irc-junkie.org)
 * Indonesian: [Masino Sinaga](http://www.openscriptsolution.com)
@@ -49,10 +50,12 @@ Comming soon. Just ask it. I will search the answer.
 You are welcome! Help me in the bug hunting, share with me new ideas about plugin further development, contribute to the source code and link to your site will appear here.
 
 == Changelog ==
+= 0.9 =
+* 01.07.2010
+* You can mark tables which you do not wish to see as scan results as hidden.
+* You can search extra columns in the core WordPress tables, which could be added by plugins.
+* Chech translation is added
 
-= 0.6 =
-* 25.05.2010
-* Dutch translation is added
 
 = 0.5.2 =
 * 18.05.2010

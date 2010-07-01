@@ -2,18 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plugins Garbage Collector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-01 21:29+0700\n"
+"POT-Creation-Date: 2010-07-01 21:25+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vladimir <vladimir@shinephp.com>\n"
-"Language-Team: ShinePHP.com <vladimir@shinephp.com>\n"
+"Language-Team: Jindřich (Masterbill) Rubeš <masterbill@volny.cz>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: English\n"
-"X-Poedit-Country: RUSSIAN FEDERATION\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=n>=2 && n<=4 ? 1 : n==1 ? 0 : 2;\n"
+"X-Poedit-Language: Czech\n"
+"X-Poedit-Country: CZECH REPUBLIC\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../pgc-options.php:55
@@ -23,22 +24,22 @@ msgstr ""
 #: ../pgc-options.php:59
 #: ../s123/pgc-options.php:59
 msgid "Scanning"
-msgstr "Per esaminare"
+msgstr "Sken"
 
 #: ../pgc-options.php:63
 #: ../s123/pgc-options.php:63
 msgid "will take some time. Please confirm to continue"
-msgstr "ci vorrà un po\\' di tempo. Per favore conferma per continuare"
+msgstr "bude chvíli trvat. Pokud jste připraveni pokračujte"
 
 #: ../pgc-options.php:86
 #: ../s123/pgc-options.php:82
 msgid "Select at least one table before click on Delete button"
-msgstr "Seleziona almeno una tabella prima di cliccare sul tasto Elimina"
+msgstr "Vyberte alespoň jednu tabulku a klikněte na smazat"
 
 #: ../pgc-options.php:89
 #: ../s123/pgc-options.php:85
 msgid "Delete database tables last confirmation: Click \"Cancel\" if you have any doubt."
-msgstr "Ultima conferma per l\\'eliminazione delle tabelle del database: Clicca \"Cancella\" se hai qualche dubbio."
+msgstr "Opravdu chcete odstranit tabulky? V případě pochybností klikněte na \"Zrušit\""
 
 #: ../pgc-options.php:99
 msgid "Search DB for tables created by plugins"
@@ -68,77 +69,77 @@ msgstr ""
 #: ../plugins-garbage-collector.php:88
 #: ../s123/pgc-options.php:97
 msgid "Scan"
-msgstr "Esamina"
+msgstr "Sken"
 
 #: ../pgc-options.php:112
 #, fuzzy
 msgid "Click this button to gather information how plugins use your WordPress database"
-msgstr "Clicca &lt;Esamina&gt; per raccogliere informazioni su come i plugin utilizzano il tuo database WordPress"
+msgstr "Kliknutím na &lt;Sken&gt; se shromáždí informace o pluginech, které využívají databázi WordPressu"
 
 #: ../pgc-options.php:127
 msgid "About this Plugin:"
-msgstr "Riguardo a questo plugin:"
+msgstr "O tomto pluginu"
 
 #: ../pgc-options.php:128
 msgid "Author's website"
-msgstr "Sito web dell'autore"
+msgstr "Web autora"
 
 #: ../pgc-options.php:129
 msgid "Plugin webpage"
-msgstr "Pagina web del plugin"
+msgstr "Web pluginu"
 
 #: ../pgc-options.php:130
 #: ../plugins-garbage-collector.php:98
 msgid "Changelog"
-msgstr "Changelog"
+msgstr "Seznam změn"
 
 #: ../pgc-options.php:131
 msgid "FAQ"
-msgstr "FAQ"
+msgstr "ČKD"
 
 #: ../pgc-options.php:132
 msgid "Donate"
-msgstr "Fai una donazione"
+msgstr "Dar"
 
 #: ../pgc-options.php:135
 msgid "Greetings:"
-msgstr "Saluti:"
+msgstr "Poděkování:"
 
 #: ../pgc-options.php:137
 msgid "It's me, the author"
-msgstr "Sono io, l'autore"
+msgstr "O mě, autorovi"
 
 #: ../pgc-options.php:138
 msgid "For the help with Chech translation"
-msgstr "Per l'aiuto con la traduzione Chech"
+msgstr "Za pomoc s chech verzí"
 
 #: ../pgc-options.php:139
 msgid "For the help with French translation"
-msgstr "Per l'aiuto con la traduzione francese"
+msgstr "Za pomoc s francouzkou verzí"
 
 #: ../pgc-options.php:140
 msgid "For the help with German translation"
-msgstr "Per l'aiuto con la traduzione tedesca"
+msgstr "Za pomoc s německou verzí"
 
 #: ../pgc-options.php:141
 msgid "For the help with Indonesian translation"
-msgstr "Per l'aiuto con la traduzione Indonesiana"
+msgstr "Za pomoc s indonéskou verzí"
 
 #: ../pgc-options.php:142
 msgid "For the help with Italian translation"
-msgstr "Per l'aiuto con la traduzione Italiano"
+msgstr "Za pomoc s italskou verzí"
 
 #: ../pgc-options.php:143
 msgid "For the help with Japanese translation"
-msgstr "Per l'aiuto con la traduzione giapponese"
+msgstr "Za pomoc s japonskou verzí"
 
 #: ../pgc-options.php:144
 msgid "For the help with Spanish translation"
-msgstr "Per l'aiuto con la traduzione spagnola"
+msgstr "Za pomoc se španělskou verzí"
 
 #: ../pgc-options.php:146
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
-msgstr "Vorresti vedere il tuo nome con il link al tuo sito qui? Sei il benvenuto! Il tuo aiuto con la traduzione e nuove idee sono molto apprezzate."
+msgstr "Přejete si zde vidět vaše jméno s odkazem? To není žádný problém! Pošlete mi překlad nebo mi sdělte váš nápad."
 
 #: ../pgc-options.php:148
 msgid "More plugins from"
@@ -158,34 +159,34 @@ msgstr ""
 #: ../pgc-lib.php:380
 #: ../s123/pgc-options.php:108
 msgid "Table Name"
-msgstr "Nome della tabella"
+msgstr "Název tabulky"
 
 #: ../pgc-lib.php:254
 #: ../s123/pgc-options.php:109
 msgid "Records #"
-msgstr "Record #"
+msgstr "Záznamů #"
 
 #: ../pgc-lib.php:255
 #: ../s123/pgc-options.php:110
 msgid "KBytes #"
-msgstr "KB #"
+msgstr "Kb #"
 
 #: ../pgc-lib.php:256
 #: ../pgc-lib.php:382
 #: ../s123/pgc-options.php:111
 msgid "Plugin Name"
-msgstr "Nome del plugin"
+msgstr "Název pluginu"
 
 #: ../pgc-lib.php:257
 #: ../pgc-lib.php:383
 #: ../s123/pgc-options.php:112
 msgid "Plugin State"
-msgstr "Stato del plugin"
+msgstr "Stav pluginu"
 
 #: ../pgc-lib.php:265
 #: ../s123/pgc-options.php:119
 msgid "Let's see what tables in your database do not belong to the core WordPress installation:"
-msgstr "Guarda quali tabelle nel tuo database non appartengono al core di WordPress:"
+msgstr "Přehled tabulek z vaší databáze, které nejsou součástí základní instalace WordPressu:"
 
 #: ../pgc-lib.php:345
 #: ../pgc-lib.php:546
@@ -195,23 +196,23 @@ msgstr ""
 #: ../pgc-lib.php:353
 #: ../s123/pgc-options.php:196
 msgid "Delete Tables"
-msgstr ""
+msgstr "Smazat tabulky"
 
 #: ../pgc-lib.php:357
 #: ../pgc-lib.php:558
 #: ../s123/pgc-options.php:200
 msgid "Attention!"
-msgstr "Attenzione!"
+msgstr "Upozornění!"
 
 #: ../pgc-lib.php:358
 #: ../s123/pgc-options.php:200
 msgid "Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Tables</code> button."
-msgstr "Non è possibile effettuare il rollback. Prima considera di effettuare il backup del database. Per favore, pensaci due volte prima di cliccare sul bottone <code>Cancella Tabelle</code>."
+msgstr "Operace <a href=\"http://cs.wikipedia.org/wiki/ROLLBACK\">rollback</a> není možná. Před pokračováním si zálohujte databázi. Dvakrát poklikejte na tlačítko <code>Delete Tables</code>."
 
 #: ../pgc-lib.php:367
 #: ../s123/pgc-options.php:210
 msgid "Congratulations! It seems that your WordPress database is clean."
-msgstr "Congratulazioni! Sembra che il tuo database wordpress sia pulito."
+msgstr "Gratulujeme! Vaše databáze WordPressu je vyčistěná."
 
 #: ../pgc-lib.php:381
 msgid "Extra Field"
@@ -219,17 +220,17 @@ msgstr ""
 
 #: ../pgc-lib.php:554
 msgid "Delete Extra Columns"
-msgstr ""
+msgstr "Smazat Extra Columns"
 
 #: ../pgc-lib.php:559
 #, fuzzy
 msgid "Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Extra Columns</code> button."
-msgstr "Non è possibile effettuare il rollback. Prima considera di effettuare il backup del database. Per favore, pensaci due volte prima di cliccare sul bottone <code>Cancella Tabelle</code>."
+msgstr "Operace <a href=\"http://cs.wikipedia.org/wiki/ROLLBACK\">rollback</a> není možná. Před pokračováním si zálohujte databázi. Dvakrát poklikejte na tlačítko <code>Delete Tables</code>."
 
 #: ../pgc-lib.php:568
 #, fuzzy
 msgid "Congratulations! It seems that your WordPress database tables structure is not changed"
-msgstr "Congratulazioni! Sembra che il tuo database wordpress sia pulito."
+msgstr "Gratulujeme! Vaše databáze WordPressu je vyčistěná."
 
 #: ../pgc-lib.php:581
 msgid "This feature is still in production and will be realized in the next version"
@@ -241,16 +242,18 @@ msgstr "Plugins Garbage Collector"
 
 #: ../plugins-garbage-collector.php:43
 msgid " requires WordPress 2.9 or newer."
-msgstr "richiede WordPress 2.9 o superiore."
+msgstr "vyžaduje WordPress 2.9 nebo novější."
 
 #: ../plugins-garbage-collector.php:43
 msgid "Please update!"
-msgstr "Per favore, aggiorna!"
+msgstr "Aktualizovat!"
 
 #: ../s123/pgc-options.php:93
 msgid "Click &lt;Scan&gt; to gather information how plugins use your WordPress database"
-msgstr "Clicca &lt;Esamina&gt; per raccogliere informazioni su come i plugin utilizzano il tuo database WordPress"
+msgstr "Kliknutím na &lt;Sken&gt; se shromáždí informace o pluginech, které využívají databázi WordPressu"
 
+#~ msgid "For the help with Dutch translation"
+#~ msgstr "Za pomoc s holandskou verzí"
 #~ msgid "Cleanup: please confirm to continue"
-#~ msgstr "Ripulire: per favore conferma per continuare"
+#~ msgstr "Cleanup: please confirm to continue"
 

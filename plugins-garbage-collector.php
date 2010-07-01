@@ -3,7 +3,7 @@
 Plugin Name: Plugins Garbage Collector
 Plugin URI: http://www.shinephp.com/plugins-garbage-collector-wordpress-plugin/
 Description: It scans your WordPress database and shows what various things old plugins which were deactivated, uninstalled) left in it. The list of additional database tables used by plugins with quant of records, size, and plugin name is shown.
-Version: 0.6
+Version: 0.9
 Author: Vladimir Garagulya
 Author URI: http://www.shinephp.com
 Text Domain: pgc
@@ -106,7 +106,8 @@ function pgc_tools_menu() {
 
 	if ( function_exists('add_management_page') ) {
     $pgc_page = add_management_page($pgc_plugin_name, $pgc_plugin_name, 9, basename(__FILE__), 'pgc_actionsPage');
-		add_action( "admin_print_styles-$pgc_page", 'pgc_adminCssAction' );
+		add_action("admin_print_styles-$pgc_page", 'pgc_adminCssAction');
+    add_action("admin_print_scripts-$pgc_page", 'pgc_scriptsAction');
 	}
 }
 // end of pgc_settings_menu()
@@ -118,6 +119,13 @@ function pgc_adminCssAction() {
 }
 // end of pgc_adminCssAction()
 
+function pgc_scriptsAction() {
+
+  wp_enqueue_script('pgc_js_script', PGC_PLUGIN_URL.'/pgc-ajax.js', array('jquery','jquery-form'));
+  wp_localize_script('pgc_js_script', 'pgcSettings', array('plugin_url' => PGC_PLUGIN_URL, 'ajax_nonce' => wp_create_nonce('plugins-garbage-collector')));
+
+}
+// end of pgc_scriptsAction()
 
 
 if (is_admin()) {
