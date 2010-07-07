@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: garbage, collector, database, clear, unused tables, cleaner
 Requires at least: 2.9.
 Tested up to: 3.0
-Stable tag: 0.9
+Stable tag: 0.9.1
 
 
 == Description ==
@@ -50,6 +50,10 @@ Comming soon. Just ask it. I will search the answer.
 You are welcome! Help me in the bug hunting, share with me new ideas about plugin further development, contribute to the source code and link to your site will appear here.
 
 == Changelog ==
+= 0.9.1 =
+* 07.07.2010
+* options form layout problem is fixed. That was wrong pgc-admin.css file version issue.
+
 = 0.9 =
 * 01.07.2010
 * You can mark tables which you do not wish to see as scan results as hidden.
