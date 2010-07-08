@@ -135,7 +135,7 @@ pgc_showMessage($mess);
 			echo pgc_displayBoxStart(__('Greetings:','pgc'), 'float: left; display: inline; margin-left: 10px; width: 300px;');
 ?>
       <a class="pgc_rsb_link" style="background-image:url(<?php echo $shinephpFavIcon; ?>);" target="_blank" title="<?php _e("It's me, the author", 'pgc'); ?>" href="http://www.shinephp.com">Vladimir</a>
-      <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/rubes.png'; ?>);" target="_blank" title="<?php _e("For the help with Chech translation",'pgc');?>" href="http://rubes.eu">Jindřich \"Masterbill\" Rubeš</a>
+      <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/rubes.png'; ?>);" target="_blank" title="<?php _e("For the help with Czech translation",'pgc');?>" href="http://rubes.eu">Jindřich \"Masterbill\" Rubeš</a>
       <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/simon.png'; ?>);" target="_blank" title="<?php _e("For the help with French translation",'pgc');?>" href="http://saymonz.net">Simon</a>
       <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/christian.png'; ?>);" target="_blank" title="<?php _e("For the help with German translation",'pgc');?>" href="http://www.irc-junkie.org">Christian</a>
       <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/masino.png'; ?>);" target="_blank" title="<?php _e("For the help with Indonesian translation",'pgc');?>" href="http://www.openscriptsolution.com">Masino Sinaga</a>

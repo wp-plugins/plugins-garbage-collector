@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plugins Garbage Collector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-01 21:25+0700\n"
+"POT-Creation-Date: 2010-07-08 23:06+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vladimir <vladimir@shinephp.com>\n"
 "Language-Team: Jindřich (Masterbill) Rubeš <masterbill@volny.cz>\n"
@@ -22,22 +22,18 @@ msgid "Turn on at least one Search checkbox before start Scan process!"
 msgstr ""
 
 #: ../pgc-options.php:59
-#: ../s123/pgc-options.php:59
 msgid "Scanning"
 msgstr "Sken"
 
 #: ../pgc-options.php:63
-#: ../s123/pgc-options.php:63
 msgid "will take some time. Please confirm to continue"
 msgstr "bude chvíli trvat. Pokud jste připraveni pokračujte"
 
 #: ../pgc-options.php:86
-#: ../s123/pgc-options.php:82
 msgid "Select at least one table before click on Delete button"
 msgstr "Vyberte alespoň jednu tabulku a klikněte na smazat"
 
 #: ../pgc-options.php:89
-#: ../s123/pgc-options.php:85
 msgid "Delete database tables last confirmation: Click \"Cancel\" if you have any doubt."
 msgstr "Opravdu chcete odstranit tabulky? V případě pochybností klikněte na \"Zrušit\""
 
@@ -67,12 +63,10 @@ msgstr ""
 
 #: ../pgc-options.php:112
 #: ../plugins-garbage-collector.php:88
-#: ../s123/pgc-options.php:97
 msgid "Scan"
 msgstr "Sken"
 
 #: ../pgc-options.php:112
-#, fuzzy
 msgid "Click this button to gather information how plugins use your WordPress database"
 msgstr "Kliknutím na &lt;Sken&gt; se shromáždí informace o pluginech, které využívají databázi WordPressu"
 
@@ -110,7 +104,7 @@ msgid "It's me, the author"
 msgstr "O mě, autorovi"
 
 #: ../pgc-options.php:138
-msgid "For the help with Chech translation"
+msgid "For the help with Czech translation"
 msgstr "Za pomoc s chech verzí"
 
 #: ../pgc-options.php:139
@@ -157,34 +151,28 @@ msgstr ""
 
 #: ../pgc-lib.php:253
 #: ../pgc-lib.php:380
-#: ../s123/pgc-options.php:108
 msgid "Table Name"
 msgstr "Název tabulky"
 
 #: ../pgc-lib.php:254
-#: ../s123/pgc-options.php:109
 msgid "Records #"
 msgstr "Záznamů #"
 
 #: ../pgc-lib.php:255
-#: ../s123/pgc-options.php:110
 msgid "KBytes #"
 msgstr "Kb #"
 
 #: ../pgc-lib.php:256
 #: ../pgc-lib.php:382
-#: ../s123/pgc-options.php:111
 msgid "Plugin Name"
 msgstr "Název pluginu"
 
 #: ../pgc-lib.php:257
 #: ../pgc-lib.php:383
-#: ../s123/pgc-options.php:112
 msgid "Plugin State"
 msgstr "Stav pluginu"
 
 #: ../pgc-lib.php:265
-#: ../s123/pgc-options.php:119
 msgid "Let's see what tables in your database do not belong to the core WordPress installation:"
 msgstr "Přehled tabulek z vaší databáze, které nejsou součástí základní instalace WordPressu:"
 
@@ -194,23 +182,19 @@ msgid "Some tables are hidden by you. Turn on \"Show hidden DB tables\" option a
 msgstr ""
 
 #: ../pgc-lib.php:353
-#: ../s123/pgc-options.php:196
 msgid "Delete Tables"
 msgstr "Smazat tabulky"
 
 #: ../pgc-lib.php:357
 #: ../pgc-lib.php:558
-#: ../s123/pgc-options.php:200
 msgid "Attention!"
 msgstr "Upozornění!"
 
 #: ../pgc-lib.php:358
-#: ../s123/pgc-options.php:200
 msgid "Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Tables</code> button."
 msgstr "Operace <a href=\"http://cs.wikipedia.org/wiki/ROLLBACK\">rollback</a> není možná. Před pokračováním si zálohujte databázi. Dvakrát poklikejte na tlačítko <code>Delete Tables</code>."
 
 #: ../pgc-lib.php:367
-#: ../s123/pgc-options.php:210
 msgid "Congratulations! It seems that your WordPress database is clean."
 msgstr "Gratulujeme! Vaše databáze WordPressu je vyčistěná."
 
@@ -223,12 +207,10 @@ msgid "Delete Extra Columns"
 msgstr "Smazat Extra Columns"
 
 #: ../pgc-lib.php:559
-#, fuzzy
 msgid "Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Extra Columns</code> button."
 msgstr "Operace <a href=\"http://cs.wikipedia.org/wiki/ROLLBACK\">rollback</a> není možná. Před pokračováním si zálohujte databázi. Dvakrát poklikejte na tlačítko <code>Delete Tables</code>."
 
 #: ../pgc-lib.php:568
-#, fuzzy
 msgid "Congratulations! It seems that your WordPress database tables structure is not changed"
 msgstr "Gratulujeme! Vaše databáze WordPressu je vyčistěná."
 
@@ -248,10 +230,12 @@ msgstr "vyžaduje WordPress 2.9 nebo novější."
 msgid "Please update!"
 msgstr "Aktualizovat!"
 
-#: ../s123/pgc-options.php:93
-msgid "Click &lt;Scan&gt; to gather information how plugins use your WordPress database"
-msgstr "Kliknutím na &lt;Sken&gt; se shromáždí informace o pluginech, které využívají databázi WordPressu"
-
+#~ msgid ""
+#~ "Click &lt;Scan&gt; to gather information how plugins use your WordPress "
+#~ "database"
+#~ msgstr ""
+#~ "Kliknutím na &lt;Sken&gt; se shromáždí informace o pluginech, které "
+#~ "využívají databázi WordPressu"
 #~ msgid "For the help with Dutch translation"
 #~ msgstr "Za pomoc s holandskou verzí"
 #~ msgid "Cleanup: please confirm to continue"

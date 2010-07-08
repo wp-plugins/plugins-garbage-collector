@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plugins Garbage Collector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-01 21:30+0700\n"
+"POT-Creation-Date: 2010-07-08 23:13+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vladimir <vladimir@shinephp.com>\n"
 "Language-Team: ShinePHP.com <vladimir@shinephp.com>\n"
@@ -21,22 +21,18 @@ msgid "Turn on at least one Search checkbox before start Scan process!"
 msgstr "Включите по крайней мере один чек-бокс перед началом процесса сканироваия!"
 
 #: ../pgc-options.php:59
-#: ../s123/pgc-options.php:59
 msgid "Scanning"
 msgstr "Сканирование"
 
 #: ../pgc-options.php:63
-#: ../s123/pgc-options.php:63
 msgid "will take some time. Please confirm to continue"
 msgstr "займет некоторое время. Подтверждите, пожалуйста, чтобы продолжить"
 
 #: ../pgc-options.php:86
-#: ../s123/pgc-options.php:82
 msgid "Select at least one table before click on Delete button"
 msgstr "Выберите по крайней мере одну таблицу перед щелчком по клавише Delete"
 
 #: ../pgc-options.php:89
-#: ../s123/pgc-options.php:85
 msgid "Delete database tables last confirmation: Click \"Cancel\" if you have any doubt."
 msgstr "Последней подтверждение перед операций удаления таблиц из базы данных: Щелкните \"Отмена\", если не уверены."
 
@@ -66,7 +62,6 @@ msgstr "Показать скрытые таблицы"
 
 #: ../pgc-options.php:112
 #: ../plugins-garbage-collector.php:88
-#: ../s123/pgc-options.php:97
 msgid "Scan"
 msgstr "Сканирование"
 
@@ -108,7 +103,8 @@ msgid "It's me, the author"
 msgstr "Это я, автор"
 
 #: ../pgc-options.php:138
-msgid "For the help with Chech translation"
+#, fuzzy
+msgid "For the help with Czech translation"
 msgstr "За помощь с чешским переводом"
 
 #: ../pgc-options.php:139
@@ -155,34 +151,28 @@ msgstr "Скрыть"
 
 #: ../pgc-lib.php:253
 #: ../pgc-lib.php:380
-#: ../s123/pgc-options.php:108
 msgid "Table Name"
 msgstr "Название таблицы"
 
 #: ../pgc-lib.php:254
-#: ../s123/pgc-options.php:109
 msgid "Records #"
 msgstr "Записей #"
 
 #: ../pgc-lib.php:255
-#: ../s123/pgc-options.php:110
 msgid "KBytes #"
 msgstr "Килобайт #"
 
 #: ../pgc-lib.php:256
 #: ../pgc-lib.php:382
-#: ../s123/pgc-options.php:111
 msgid "Plugin Name"
 msgstr "Название плагина"
 
 #: ../pgc-lib.php:257
 #: ../pgc-lib.php:383
-#: ../s123/pgc-options.php:112
 msgid "Plugin State"
 msgstr "Состояние плагина"
 
 #: ../pgc-lib.php:265
-#: ../s123/pgc-options.php:119
 msgid "Let's see what tables in your database do not belong to the core WordPress installation:"
 msgstr "Давайте посмотрим, какие таблицы в вашей базе данных не принадлежат основной установке WordPress:"
 
@@ -192,23 +182,19 @@ msgid "Some tables are hidden by you. Turn on \"Show hidden DB tables\" option a
 msgstr "Некоторые таблицы скрыты вами. Включи опцию \"Показать скрытые таблицы\" и щелкни \"Сканировать\", чтобы отобразить из снова."
 
 #: ../pgc-lib.php:353
-#: ../s123/pgc-options.php:196
 msgid "Delete Tables"
 msgstr "Удалить Таблицы"
 
 #: ../pgc-lib.php:357
 #: ../pgc-lib.php:558
-#: ../s123/pgc-options.php:200
 msgid "Attention!"
 msgstr "Внимание!"
 
 #: ../pgc-lib.php:358
-#: ../s123/pgc-options.php:200
 msgid "Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Tables</code> button."
 msgstr "Откат операции не возможен. Сделайте резервную копию базы данных сначала. Пожалуйста, хорошо подумайте перед щелчком по кнопке <code>Удалить Таблицы</code>"
 
 #: ../pgc-lib.php:367
-#: ../s123/pgc-options.php:210
 msgid "Congratulations! It seems that your WordPress database is clean."
 msgstr "Поздравляем! Похоже, что ваша WordPress база данных чиста."
 
@@ -244,10 +230,12 @@ msgstr " требует WordPress 2.9 или новее"
 msgid "Please update!"
 msgstr "Пожалуйста обновите!"
 
-#: ../s123/pgc-options.php:93
-msgid "Click &lt;Scan&gt; to gather information how plugins use your WordPress database"
-msgstr "Щелкните &lt;Сканирование&gt;, чтобы собрать информацию о том, как плагины используют базу данных вашего WordPress"
-
+#~ msgid ""
+#~ "Click &lt;Scan&gt; to gather information how plugins use your WordPress "
+#~ "database"
+#~ msgstr ""
+#~ "Щелкните &lt;Сканирование&gt;, чтобы собрать информацию о том, как "
+#~ "плагины используют базу данных вашего WordPress"
 #~ msgid "Cleanup: please confirm to continue"
 #~ msgstr "Зачистка: пожалуйста подтвердите, чтобы продолжить"
 #~ msgid "Action Page"
