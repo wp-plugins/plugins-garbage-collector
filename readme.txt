@@ -1,32 +1,18 @@
 === Plugins Garbage Collector ===
-Contributors: ShinePHP
+Contributors: shinephp
 Donate link: http://www.shinephp.com/donate/
 Tags: garbage, collector, database, clear, unused tables, cleaner
 Requires at least: 2.9.
 Tested up to: 3.0
 Stable tag: 0.9.1
 
+It scans your WordPress database and shows what various things old plugins (which were deactivated or uninstalled) left in it. Cleanup is available.
 
 == Description ==
 
 Plugins Garbage Collector scans your WordPress database and shows the tables beyond of core WordPress installation. Some WordPress plugins create and use its own database tables. Those tables are left in your database after plugin deactivation and deletion often. If your blog is more than 1 day old you have some plugins garbage in your WordPress database probably. With the help of this plugin you can check your database and discover if it is clean or not.
 Extra columns added to the core WordPress tables could be shown also.
-To read more about 'Plugins Garbage Collector' visit this link http://www.shinephp.com/plugins-garbage-collector-wordpress-plugin/
-
-= Translations =
-* Czech: [Jindřich "Masterbill" Rubeš](http://rubes.eu)
-* French: [Simon](http://saymonz.net)
-* German: [Christian](http://www.irc-junkie.org)
-* Indonesian: [Masino Sinaga](http://www.openscriptsolution.com)
-* Italian: [Alessandro Mariani](http://technodin.org)
-* Japanese: [Yoichi](http://www.ad-minister.net)
-* Russian: [Vladimir Garagulya](http://shinephp.com)
-* Spanish: Melvis E. Leon Lopez
-
-
-Dear plugin User!
-If you wish to help me with this plugin translation I very appreciate it. Please send your language .po file to vladimir[at-sign]shinephp.com email. Do not forget include you site link in order I can show it with greetings for the translation help at shinephp.com, plugin settings page and in this readme.txt file.
-If you have better translation for some phrases or found not translated phrases yet at the already made translation files, send your translation to me and it will be taken into consideration. You are welcome!
+To read more about 'Plugins Garbage Collector' visit this link at <a href="http://www.shinephp.com/plugins-garbage-collector-wordpress-plugin/" rel="nofollow">shinephp.com</a>
 
 
 == Installation ==
@@ -48,6 +34,22 @@ Comming soon. Just ask it. I will search the answer.
 
 == Special Thanks to ==
 You are welcome! Help me in the bug hunting, share with me new ideas about plugin further development, contribute to the source code and link to your site will appear here.
+
+= Translations =
+* Czech: [Jindřich "Masterbill" Rubeš](http://rubes.eu)
+* French: [Simon](http://saymonz.net)
+* German: [Christian](http://www.irc-junkie.org)
+* Indonesian: [Masino Sinaga](http://www.openscriptsolution.com)
+* Italian: [Alessandro Mariani](http://technodin.org)
+* Japanese: [Yoichi](http://www.ad-minister.net)
+* Russian: [Vladimir Garagulya](http://shinephp.com)
+* Spanish: Melvis E. Leon Lopez
+
+
+Dear plugin User!
+If you wish to help me with this plugin translation I very appreciate it. Please send your language .po file to vladimir[at-sign]shinephp.com email. Do not forget include you site link in order I can show it with greetings for the translation help at shinephp.com, plugin settings page and in this readme.txt file.
+If you have better translation for some phrases or found not translated phrases yet at the already made translation files, send your translation to me and it will be taken into consideration. You are welcome!
+
 
 == Changelog ==
 = 0.9.1 =
