@@ -2,8 +2,8 @@
 Contributors: shinephp
 Donate link: http://www.shinephp.com/donate/
 Tags: garbage, collector, database, clear, unused tables, cleaner
-Requires at least: 2.9.
-Tested up to: 3.0
+Requires at least: 3.0.
+Tested up to: 3.0.1
 Stable tag: 0.9.2
 
 It scans your WordPress database and shows what various things old plugins (which were deactivated or uninstalled) left in it. Cleanup is available.
