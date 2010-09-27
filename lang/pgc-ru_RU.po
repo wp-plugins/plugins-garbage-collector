@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plugins Garbage Collector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-08 23:13+0700\n"
+"POT-Creation-Date: 2010-09-27 23:33+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vladimir <vladimir@shinephp.com>\n"
 "Language-Team: ShinePHP.com <vladimir@shinephp.com>\n"
@@ -103,7 +103,6 @@ msgid "It's me, the author"
 msgstr "Это я, автор"
 
 #: ../pgc-options.php:138
-#, fuzzy
 msgid "For the help with Czech translation"
 msgstr "За помощь с чешским переводом"
 
@@ -139,92 +138,96 @@ msgstr "Желаете увидеть здесь свое имя и ссылку
 msgid "More plugins from"
 msgstr "Ещё плагины от"
 
-#: ../pgc-options.php:161
-#: ../pgc-options.php:178
-msgid "No items found."
-msgstr "Ничего не найдено."
-
-#: ../pgc-lib.php:252
-#: ../pgc-lib.php:379
+#: ../pgc-lib.php:254
+#: ../pgc-lib.php:381
 msgid "Hide"
 msgstr "Скрыть"
 
-#: ../pgc-lib.php:253
-#: ../pgc-lib.php:380
+#: ../pgc-lib.php:255
+#: ../pgc-lib.php:382
 msgid "Table Name"
 msgstr "Название таблицы"
 
-#: ../pgc-lib.php:254
+#: ../pgc-lib.php:256
 msgid "Records #"
 msgstr "Записей #"
 
-#: ../pgc-lib.php:255
+#: ../pgc-lib.php:257
 msgid "KBytes #"
 msgstr "Килобайт #"
 
-#: ../pgc-lib.php:256
-#: ../pgc-lib.php:382
+#: ../pgc-lib.php:258
+#: ../pgc-lib.php:384
 msgid "Plugin Name"
 msgstr "Название плагина"
 
-#: ../pgc-lib.php:257
-#: ../pgc-lib.php:383
+#: ../pgc-lib.php:259
+#: ../pgc-lib.php:385
 msgid "Plugin State"
 msgstr "Состояние плагина"
 
-#: ../pgc-lib.php:265
+#: ../pgc-lib.php:267
 msgid "Let's see what tables in your database do not belong to the core WordPress installation:"
 msgstr "Давайте посмотрим, какие таблицы в вашей базе данных не принадлежат основной установке WordPress:"
 
-#: ../pgc-lib.php:345
-#: ../pgc-lib.php:546
+#: ../pgc-lib.php:347
+#: ../pgc-lib.php:548
 msgid "Some tables are hidden by you. Turn on \"Show hidden DB tables\" option and click \"Scan\" button again to show them."
 msgstr "Некоторые таблицы скрыты вами. Включи опцию \"Показать скрытые таблицы\" и щелкни \"Сканировать\", чтобы отобразить из снова."
 
-#: ../pgc-lib.php:353
+#: ../pgc-lib.php:355
 msgid "Delete Tables"
 msgstr "Удалить Таблицы"
 
-#: ../pgc-lib.php:357
-#: ../pgc-lib.php:558
+#: ../pgc-lib.php:359
+#: ../pgc-lib.php:560
 msgid "Attention!"
 msgstr "Внимание!"
 
-#: ../pgc-lib.php:358
+#: ../pgc-lib.php:360
 msgid "Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Tables</code> button."
 msgstr "Откат операции не возможен. Сделайте резервную копию базы данных сначала. Пожалуйста, хорошо подумайте перед щелчком по кнопке <code>Удалить Таблицы</code>"
 
-#: ../pgc-lib.php:367
+#: ../pgc-lib.php:369
 msgid "Congratulations! It seems that your WordPress database is clean."
 msgstr "Поздравляем! Похоже, что ваша WordPress база данных чиста."
 
-#: ../pgc-lib.php:381
+#: ../pgc-lib.php:383
 msgid "Extra Field"
 msgstr "Добавл. поле"
 
-#: ../pgc-lib.php:554
+#: ../pgc-lib.php:556
 msgid "Delete Extra Columns"
 msgstr "Удалить столбцы"
 
-#: ../pgc-lib.php:559
+#: ../pgc-lib.php:561
 msgid "Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Extra Columns</code> button."
 msgstr "Откат операции не возможен. Сделайте резервную копию базы данных сначала. Пожалуйста, хорошо подумайте перед щелчком по кнопке <code>Удалить Таблицы</code>"
 
-#: ../pgc-lib.php:568
+#: ../pgc-lib.php:570
 msgid "Congratulations! It seems that your WordPress database tables structure is not changed"
 msgstr "Поздравляем! Похоже, что ваша WordPress база данных чиста."
 
-#: ../pgc-lib.php:581
+#: ../pgc-lib.php:583
 msgid "This feature is still in production and will be realized in the next version"
 msgstr "Эта функция ещё в разработке и будет реализована в следующей версии"
+
+#: ../pgc-lib.php:605
+#: ../pgc-lib.php:620
+msgid "No items found."
+msgstr "Ничего не найдено."
+
+#: ../pgc-lib.php:608
+msgid "Recent Posts:"
+msgstr "Последние статьи:"
 
 #: ../plugins-garbage-collector.php:41
 msgid "Plugins Garbage Collector"
 msgstr "Plugins Garbage Collector"
 
 #: ../plugins-garbage-collector.php:43
-msgid " requires WordPress 2.9 or newer."
-msgstr " требует WordPress 2.9 или новее"
+msgid " requires WordPress 3.0 or newer."
+msgstr " требует WordPress 3.0 или новее"
 
 #: ../plugins-garbage-collector.php:43
 msgid "Please update!"

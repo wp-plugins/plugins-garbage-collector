@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plugins Garbage Collector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-01 21:29+0700\n"
+"POT-Creation-Date: 2010-09-27 23:27+0700\n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Vladimir <vladimir@shinephp.com>\n"
 "Language-Team: ShinePHP.com <vladimir@shinephp.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,22 +21,18 @@ msgid "Turn on at least one Search checkbox before start Scan process!"
 msgstr "Seleziona almeno una casella di ricerca prima di Esaminare!"
 
 #: ../pgc-options.php:59
-#: ../s123/pgc-options.php:59
 msgid "Scanning"
 msgstr "Per esaminare"
 
 #: ../pgc-options.php:63
-#: ../s123/pgc-options.php:63
 msgid "will take some time. Please confirm to continue"
 msgstr "ci vorrà un po\\' di tempo. Per favore conferma per continuare"
 
 #: ../pgc-options.php:86
-#: ../s123/pgc-options.php:82
 msgid "Select at least one table before click on Delete button"
 msgstr "Seleziona almeno una tabella prima di cliccare sul tasto Elimina"
 
 #: ../pgc-options.php:89
-#: ../s123/pgc-options.php:85
 msgid "Delete database tables last confirmation: Click \"Cancel\" if you have any doubt."
 msgstr "Ultima conferma per l\\'eliminazione delle tabelle del database: Clicca \"Cancella\" se hai qualche dubbio."
 
@@ -66,7 +62,6 @@ msgstr "Mostra tabelle nascoste"
 
 #: ../pgc-options.php:112
 #: ../plugins-garbage-collector.php:88
-#: ../s123/pgc-options.php:97
 msgid "Scan"
 msgstr "Esamina"
 
@@ -108,7 +103,7 @@ msgid "It's me, the author"
 msgstr "Sono io, l'autore"
 
 #: ../pgc-options.php:138
-msgid "For the help with Chech translation"
+msgid "For the help with Czech translation"
 msgstr "Per l'aiuto con la traduzione in Ceco"
 
 #: ../pgc-options.php:139
@@ -143,110 +138,107 @@ msgstr "Vorresti vedere il tuo nome con il link al tuo sito qui? Sei il benvenut
 msgid "More plugins from"
 msgstr "Altri pulgin di"
 
-#: ../pgc-options.php:161
-#: ../pgc-options.php:178
-msgid "No items found."
-msgstr "Non sono stati trovati oggetti."
-
-#: ../pgc-lib.php:252
-#: ../pgc-lib.php:379
+#: ../pgc-lib.php:254
+#: ../pgc-lib.php:381
 msgid "Hide"
 msgstr "Nascondi"
 
-#: ../pgc-lib.php:253
-#: ../pgc-lib.php:380
-#: ../s123/pgc-options.php:108
+#: ../pgc-lib.php:255
+#: ../pgc-lib.php:382
 msgid "Table Name"
 msgstr "Nome della tabella"
 
-#: ../pgc-lib.php:254
-#: ../s123/pgc-options.php:109
+#: ../pgc-lib.php:256
 msgid "Records #"
 msgstr "Record #"
 
-#: ../pgc-lib.php:255
-#: ../s123/pgc-options.php:110
+#: ../pgc-lib.php:257
 msgid "KBytes #"
 msgstr "KB #"
 
-#: ../pgc-lib.php:256
-#: ../pgc-lib.php:382
-#: ../s123/pgc-options.php:111
+#: ../pgc-lib.php:258
+#: ../pgc-lib.php:384
 msgid "Plugin Name"
 msgstr "Nome del plugin"
 
-#: ../pgc-lib.php:257
-#: ../pgc-lib.php:383
-#: ../s123/pgc-options.php:112
+#: ../pgc-lib.php:259
+#: ../pgc-lib.php:385
 msgid "Plugin State"
 msgstr "Stato del plugin"
 
-#: ../pgc-lib.php:265
-#: ../s123/pgc-options.php:119
+#: ../pgc-lib.php:267
 msgid "Let's see what tables in your database do not belong to the core WordPress installation:"
 msgstr "Guarda quali tabelle nel tuo database non appartengono al core di WordPress:"
 
-#: ../pgc-lib.php:345
-#: ../pgc-lib.php:546
+#: ../pgc-lib.php:347
+#: ../pgc-lib.php:548
 msgid "Some tables are hidden by you. Turn on \"Show hidden DB tables\" option and click \"Scan\" button again to show them."
 msgstr "Hai nascosto alcune tabelle. Seleziona l'opzione \"Mostra tabelle nascoste DB\" e clicca nuovamente il pulsante \"Esamina\" per mostrarle."
 
-#: ../pgc-lib.php:353
-#: ../s123/pgc-options.php:196
+#: ../pgc-lib.php:355
 msgid "Delete Tables"
 msgstr "Cancella Tabelle"
 
-#: ../pgc-lib.php:357
-#: ../pgc-lib.php:558
-#: ../s123/pgc-options.php:200
+#: ../pgc-lib.php:359
+#: ../pgc-lib.php:560
 msgid "Attention!"
 msgstr "Attenzione!"
 
-#: ../pgc-lib.php:358
-#: ../s123/pgc-options.php:200
+#: ../pgc-lib.php:360
 msgid "Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Tables</code> button."
 msgstr "Non è possibile effettuare il rollback. Prima considera di effettuare il backup del database. Per favore, pensaci due volte prima di cliccare sul bottone <code>Cancella Tabelle</code>."
 
-#: ../pgc-lib.php:367
-#: ../s123/pgc-options.php:210
+#: ../pgc-lib.php:369
 msgid "Congratulations! It seems that your WordPress database is clean."
 msgstr "Congratulazioni! Sembra che il tuo database wordpress sia pulito."
 
-#: ../pgc-lib.php:381
+#: ../pgc-lib.php:383
 msgid "Extra Field"
 msgstr "Campo Extra"
 
-#: ../pgc-lib.php:554
+#: ../pgc-lib.php:556
 msgid "Delete Extra Columns"
 msgstr "Elimina Colonne Extra"
 
-#: ../pgc-lib.php:559
+#: ../pgc-lib.php:561
 msgid "Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Extra Columns</code> button."
 msgstr "Non è possibile tornare indietro. Prima, considera di effettuare il backup del database. Per favore, pensaci due volte prima di cliccare sul bottone <code>Cancella Tabelle</code>."
 
-#: ../pgc-lib.php:568
+#: ../pgc-lib.php:570
 msgid "Congratulations! It seems that your WordPress database tables structure is not changed"
 msgstr "Congratulazioni! Sembra che la struttura delle tabelle del tuo database WordPress non sia cambiata"
 
-#: ../pgc-lib.php:581
+#: ../pgc-lib.php:583
 msgid "This feature is still in production and will be realized in the next version"
 msgstr "Questa funzionalità è ancora in fase di sviluppo e sarà realizzata nella prossima versione"
+
+#: ../pgc-lib.php:605
+#: ../pgc-lib.php:620
+msgid "No items found."
+msgstr "Non sono stati trovati oggetti."
+
+#: ../pgc-lib.php:608
+msgid "Recent Posts:"
+msgstr ""
 
 #: ../plugins-garbage-collector.php:41
 msgid "Plugins Garbage Collector"
 msgstr "Plugins Garbage Collector"
 
 #: ../plugins-garbage-collector.php:43
-msgid " requires WordPress 2.9 or newer."
-msgstr "richiede WordPress 2.9 o superiore."
+msgid " requires WordPress 3.0 or newer."
+msgstr "richiede WordPress 3.0 o superiore."
 
 #: ../plugins-garbage-collector.php:43
 msgid "Please update!"
 msgstr "Per favore, aggiorna!"
 
-#: ../s123/pgc-options.php:93
-msgid "Click &lt;Scan&gt; to gather information how plugins use your WordPress database"
-msgstr "Clicca &lt;Esamina&gt; per raccogliere informazioni su come i plugin utilizzano il tuo database WordPress"
-
+#~ msgid ""
+#~ "Click &lt;Scan&gt; to gather information how plugins use your WordPress "
+#~ "database"
+#~ msgstr ""
+#~ "Clicca &lt;Esamina&gt; per raccogliere informazioni su come i plugin "
+#~ "utilizzano il tuo database WordPress"
 #~ msgid "Cleanup: please confirm to continue"
 #~ msgstr "Ripulire: per favore conferma per continuare"
+
