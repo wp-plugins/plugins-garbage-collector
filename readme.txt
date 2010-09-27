@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: garbage, collector, database, clear, unused tables, cleaner
 Requires at least: 2.9.
 Tested up to: 3.0
-Stable tag: 0.9.1
+Stable tag: 0.9.2
 
 It scans your WordPress database and shows what various things old plugins (which were deactivated or uninstalled) left in it. Cleanup is available.
 
@@ -19,6 +19,7 @@ To read more about 'Plugins Garbage Collector' visit this link at <a href="http:
 
 Installation procedure:
 
+Attention! Starting from version 0.9.2 plugin works with WordPress 3.0 and higher only. For earlier WordPress versions use plugin version 0.9.1 from http://downloads.wordpress.org/plugin/plugins-garbage-collector.0.9.1.zip
 1. Deactivate plugin if you have the previous version installed.
 2. Extract "plugins-garbage-collector.x.x.x.zip" archive content to the "/wp-content/plugins/plugins-garbage-collector" directory.
 3. Activate "Plugins Garbage Collector" plugin via 'Plugins' menu in WordPress admin menu. 
@@ -52,6 +53,11 @@ If you have better translation for some phrases or found not translated phrases 
 
 
 == Changelog ==
+= 0.9.2 =
+* 27.09.2010
+* Technical update for WordPress 3.0 full compatibility. Staff deprecated since WordPress v.3.0 is excluded.
+* Italian translation update. Thanks to [Alessandro Mariani](http://technodin.org).
+
 = 0.9.1 =
 * 07.07.2010
 * options form layout problem is fixed. That was wrong pgc-admin.css file version issue.

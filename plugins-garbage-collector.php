@@ -3,7 +3,7 @@
 Plugin Name: Plugins Garbage Collector
 Plugin URI: http://www.shinephp.com/plugins-garbage-collector-wordpress-plugin/
 Description: It scans your WordPress database and shows what various things old plugins which were deactivated, uninstalled) left in it. The list of additional database tables used by plugins with quant of records, size, and plugin name is shown.
-Version: 0.9.1
+Version: 0.9.2
 Author: Vladimir Garagulya
 Author URI: http://www.shinephp.com
 Text Domain: pgc
@@ -40,8 +40,8 @@ require_once('pgc-lib.php');
 load_plugin_textdomain('pgc','', $pgcPluginDirName.'/lang');
 $pgc_plugin_name = __('Plugins Garbage Collector', 'pgc');
 
-$exit_msg = $pgc_plugin_name.__(' requires WordPress 2.9 or newer.', 'pgc').'<a href="http://codex.wordpress.org/Upgrading_WordPress">'.__('Please update!', 'pgc').'</a>';
-if (version_compare($wp_version,"2.9","<")) {
+$exit_msg = $pgc_plugin_name.__(' requires WordPress 3.0 or newer.', 'pgc').'<a href="http://codex.wordpress.org/Upgrading_WordPress">'.__('Please update!', 'pgc').'</a>';
+if (version_compare($wp_version,"3.0","<")) {
 	return ($exit_msg);
 }
 
@@ -105,7 +105,7 @@ function pgc_tools_menu() {
   global $pgc_plugin_name;
 
 	if ( function_exists('add_management_page') ) {
-    $pgc_page = add_management_page($pgc_plugin_name, $pgc_plugin_name, 9, basename(__FILE__), 'pgc_actionsPage');
+    $pgc_page = add_management_page($pgc_plugin_name, $pgc_plugin_name, 'create_users', basename(__FILE__), 'pgc_actionsPage');
 		add_action("admin_print_styles-$pgc_page", 'pgc_adminCssAction');
     add_action("admin_print_scripts-$pgc_page", 'pgc_scriptsAction');
 	}

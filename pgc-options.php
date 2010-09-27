@@ -135,7 +135,7 @@ pgc_showMessage($mess);
 			echo pgc_displayBoxStart(__('Greetings:','pgc'), 'float: left; display: inline; margin-left: 10px; width: 300px;');
 ?>
       <a class="pgc_rsb_link" style="background-image:url(<?php echo $shinephpFavIcon; ?>);" target="_blank" title="<?php _e("It's me, the author", 'pgc'); ?>" href="http://www.shinephp.com">Vladimir</a>
-      <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/rubes.png'; ?>);" target="_blank" title="<?php _e("For the help with Czech translation",'pgc');?>" href="http://rubes.eu">Jindřich \"Masterbill\" Rubeš</a>
+      <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/rubes.png'; ?>);" target="_blank" title="<?php _e("For the help with Czech translation",'pgc');?>" href="http://rubes.eu">Jindřich &quot;Masterbill&quot; Rubeš</a>
       <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/simon.png'; ?>);" target="_blank" title="<?php _e("For the help with French translation",'pgc');?>" href="http://saymonz.net">Simon</a>
       <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/christian.png'; ?>);" target="_blank" title="<?php _e("For the help with German translation",'pgc');?>" href="http://www.irc-junkie.org">Christian</a>
       <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/masino.png'; ?>);" target="_blank" title="<?php _e("For the help with Indonesian translation",'pgc');?>" href="http://www.openscriptsolution.com">Masino Sinaga</a>
@@ -146,38 +146,7 @@ pgc_showMessage($mess);
       _e('Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated.','pgc');
 			echo pgc_displayBoxEnd();
       echo pgc_displayBoxStart(__('More plugins from','pgc').' <a href="http://www.shinephp.com" title="ShinePHP.com">ShinePHP.com</a>', 'float: left; display: inline; margin-left: 10px; width: 350px;');
-      if (file_exists(ABSPATH.WPINC.'/rss.php')) {
-        include_once(ABSPATH.WPINC.'/rss.php');
-        $rss = fetch_rss('http://www.shinephp.com/category/shinephp-wordpress-plugins/feed/');
-        if ($rss && $rss->items && sizeof($rss->items) > 0) {
-          echo '<ul>';
-          foreach ((array) $rss->items as $item) {
-            $title = htmlentities($item['title'], ENT_QUOTES, "UTF-8");
-            $link = $item['link'];
-            echo '<li><a href="'.$link.'">'.$title.'</a></li>';
-          }
-          echo '</ul>';
-        } else {
-          echo '<ul><li>'.__('No items found.', 'pgc') . '</li></ul>';
-        }
-        echo '<hr/>';
-        echo '<span style="font-size: 12px; font-weight: bold;">Recent Posts:</span><br/>';
-        $rss = fetch_rss('http://feeds.feedburner.com/shinephp');
-        //$rss = fetch_rss('http://www.shinephp.com/category/shinephp-plugins-news/feed/');
-        if ($rss && $rss->items && sizeof($rss->items) > 0) {
-          echo '<ul>';
-          $rss->items = array_slice($rss->items, 0, 5);
-          foreach ((array) $rss->items as $item) {
-            $title = htmlentities($item['title'], ENT_QUOTES, "UTF-8");
-            $link = $item['link'];
-            $date = date('F j, Y', strtotime($item['pubdate']));
-            echo '<li><a href="'.$link.'">'.$title.'</a>&ndash; <span class="rss-date">'.$date.'</span></li>';
-          }
-          echo '</ul>';
-        } else {
-          echo '<ul><li>'.__('No items found.', 'pgc') . '</li></ul>';
-        }
-      }
+      pgc_shinephpNews();
       echo pgc_displayBoxEnd();
 ?>
 						</div>
