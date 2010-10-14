@@ -148,7 +148,7 @@ function pgc_scanPluginsForDbTablesUse(&$tables) {
       $ext = pathinfo($plugin_file, PATHINFO_EXTENSION);
       if ($ext=='php' || $ext=='PHP') {
         $fh = fopen(WP_PLUGIN_DIR.'/'.$plugin_file, 'r');
-        if (!fh) {
+        if (!$fh) {
           continue;
         }
         while (!feof($fh)) {

@@ -55,7 +55,7 @@ If you have better translation for some phrases or found not translated phrases 
 == Changelog ==
 = 0.9.3 =
 * 14.10.2010
-* Bug fix: database table names had been processed in the lowercase format and could not be deleted if have uppercase letters in it.  It is fixed now. If database table has 'dbTableWithSomeData' name, you will see it as 'dbTableWithSomeData', not as 'dbtablewithsomedata'. Thanks to [Deirdre](http://unlimitedwhispers.com) who found this bug.
+* Bug fix: database table names had been processed in the lowercase format and tables could not be deleted if have uppercase letters in it.  It is fixed now. If database table has 'dbTableWithSomeData' name, you will see it as 'dbTableWithSomeData', not as 'dbtablewithsomedata'. Thanks to [Deirdre](http://unlimitedwhispers.com) who found this bug.
 
 = 0.9.2 =
 * 27.09.2010
