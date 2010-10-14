@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: garbage, collector, database, clear, unused tables, cleaner
 Requires at least: 3.0.
 Tested up to: 3.0.1
-Stable tag: 0.9.2
+Stable tag: 0.9.3
 
 It scans your WordPress database and shows what various things old plugins (which were deactivated or uninstalled) left in it. Cleanup is available.
 
@@ -53,6 +53,10 @@ If you have better translation for some phrases or found not translated phrases 
 
 
 == Changelog ==
+= 0.9.3 =
+* 14.10.2010
+* Bug fix: database table names had been processed in the lowercase format and could not be deleted if have uppercase letters in it.  It is fixed now. If database table has 'dbTableWithSomeData' name, you will see it as 'dbTableWithSomeData', not as 'dbtablewithsomedata'. Thanks to [Deirdre](http://unlimitedwhispers.com) who found this bug.
+
 = 0.9.2 =
 * 27.09.2010
 * Technical update for WordPress 3.0 full compatibility. Staff deprecated since WordPress v.3.0 is excluded.
