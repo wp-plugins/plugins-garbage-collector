@@ -58,7 +58,7 @@ If you have better translation for some phrases or found not translated phrases 
 = 0.9.5 =
 * 16.01.2011
 * Chinese Simple translation is added.
-* Minor change to pgc-ajax.js error processing is made.
+* Minor change to pgc-ajax.js errors processing is made.
 
 = 0.9.4 =
 * 28.12.2010
