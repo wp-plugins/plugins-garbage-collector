@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: garbage, collector, database, clear, unused tables, cleaner
 Requires at least: 3.0.
 Tested up to: 3.1
-Stable tag: 0.9.4
+Stable tag: 0.9.5
 
 It scans your WordPress database and shows what various things old plugins (which were deactivated or uninstalled) left in it. Cleanup is available.
 
@@ -37,6 +37,7 @@ Comming soon. Just ask it. I will search the answer.
 You are welcome! Help me in the bug hunting, share with me new ideas about plugin further development, contribute to the source code and link to your site will appear here.
 
 = Translations =
+* Chinese: [Owen](http://mencase.com)
 * Czech: [Jindřich "Masterbill" Rubeš](http://rubes.eu)
 * French: [Simon](http://saymonz.net)
 * German: [Christian](http://www.irc-junkie.org)
@@ -54,6 +55,11 @@ If you have better translation for some phrases or found not translated phrases 
 
 
 == Changelog ==
+= 0.9.5 =
+* 16.01.2011
+* Chinese Simple translation is added.
+* Minor change to pgc-ajax.js error processing is made.
+
 = 0.9.4 =
 * 28.12.2010
 * Italian translation is updated.

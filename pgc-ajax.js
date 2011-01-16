@@ -29,7 +29,7 @@ function pgcRequestProgress() {
        alert('Error: Empty answer is received');
        return;
      }
-     if (msg.indexOf('error')<0) {
+     if (msg.indexOf('<pgc>error')<0) {
        beginTag = msg.indexOf('<pgc>');
        endTag = msg.indexOf('</pgc>');
        if (beginTag>=0 && endTag>0) {
@@ -111,21 +111,21 @@ function pgcScanButtonClick() {
      if (msg==undefined || msg=='') {
        alert('Error: Empty answer is received');
      } else {
-      if (msg.indexOf('error')<0) {
-         beginTag = msg.indexOf('<pgc>');
-         endTag = msg.indexOf('</pgc>');
-         if (beginTag>=0 && endTag>0) {
-           msg = msg.substring(beginTag + 5);
-           endTag = msg.indexOf('</pgc>');
-           msg = msg.substring(0, endTag);
-           el = document.getElementById('scanresults');
-           el.innerHTML = msg;
-           el.style.display = 'block';
-         } else {
-           alert('Wrong answer format 1: '+ msg);
-         }
-      } else {
+      if (msg.indexOf('<pgc>error')==0) {
         alert(msg);
+      } else {
+        beginTag = msg.indexOf('<pgc>');
+        endTag = msg.indexOf('</pgc>');
+        if (beginTag>=0 && endTag>0) {
+          msg = msg.substring(beginTag + 5);
+          endTag = msg.indexOf('</pgc>');
+          msg = msg.substring(0, endTag);
+          el = document.getElementById('scanresults');
+          el.innerHTML = msg;
+          el.style.display = 'block';
+        } else {
+          alert('Wrong answer format 1: '+ msg);
+        }
       }
      }
      stopProgressBar();
@@ -163,7 +163,7 @@ jQuery.ajax({
        alert('Error: Empty answer is received');
        return;
      }
-     if (msg.indexOf('error')<0) {
+     if (msg.indexOf('<pgc>error')<0) {
        beginTag = msg.indexOf('<pgc>');
        endTag = msg.indexOf('</pgc>');
        if (beginTag>=0 && endTag>0) {
