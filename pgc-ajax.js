@@ -55,21 +55,21 @@ function pgcRequestProgress() {
          progress.style.width = percents*3 +'px';
          document.getElementById('statusbar').innerHTML = message;
          if (scanActive) {
-          intervalId = setInterval('pgcRequestProgress()', 3000);
+          intervalId = setInterval('pgcRequestProgress()', 1000);
          }
        } else {
-         alert('Wrong answer format 2: '+ msg);
          stopProgressBar();
+         alert('Wrong answer format 2: '+ msg);                  
        }
-     } else {
-       alert(msg);
+     } else {       
        stopProgressBar();
+       alert(msg);
      }
 
    },
-   error: function(msg) {
-     alert(msg);
+   error: function(jqXHR, textStatus, errorThrown) {     
      stopProgressBar();
+     alert(textStatus +' - '+ errorThrown);
    }
  });
 
@@ -130,9 +130,9 @@ function pgcScanButtonClick() {
      }
      stopProgressBar();
    },
-   error: function(msg) {
-     stopProgressBar();
-     alert(msg);
+   error: function(jqXHR, textStatus, errorThrown) {
+     stopProgressBar();     
+     alert(textStatus +' - '+ errorThrown);     
    }
  });
   if (scanActive) {
@@ -188,9 +188,9 @@ jQuery.ajax({
        alert(msg);
      }
    },
-   error: function(msg) {
-     alert(msg);
-     stopProgressBar();
+   error: function(jqXHR, textStatus, errorThrown) {
+     stopProgressBar();     
+     alert(textStatus +' - '+ errorThrown);     
    }
  });
 

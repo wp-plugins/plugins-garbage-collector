@@ -3,8 +3,8 @@ Contributors: shinephp
 Donate link: http://www.shinephp.com/donate/
 Tags: garbage, collector, database, clear, unused tables, cleaner
 Requires at least: 3.0.
-Tested up to: 3.1
-Stable tag: 0.9.5
+Tested up to: 3.2
+Stable tag: 0.9.7
 
 It scans your WordPress database and shows what various things old plugins (which were deactivated or uninstalled) left in it. Cleanup is available.
 
@@ -34,7 +34,10 @@ Comming soon. Just ask it. I will search the answer.
 
 
 == Special Thanks to ==
+* [alx359 ](http://www.gigahub.com) - for contribution to the source code which fixed AJAX empty response for WordPress multi-site with subdomains and other.
+
 You are welcome! Help me in the bug hunting, share with me new ideas about plugin further development, contribute to the source code and link to your site will appear here.
+
 
 = Translations =
 * Chinese: [Owen](http://mencase.com)
@@ -55,6 +58,11 @@ If you have better translation for some phrases or found not translated phrases 
 
 
 == Changelog ==
+= 0.9.7 =
+* AJAX empty response for WordPress multi-site with subdomains is fixed - thanks to alx359. 
+* AJAX error processing is enhanced slightly.
+* Minor enhancements to plugin page CSS are made.
+
 = 0.9.5 =
 * 16.01.2011
 * Chinese Simple translation is added.

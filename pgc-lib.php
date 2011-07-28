@@ -14,19 +14,16 @@ require_once(ABSPATH.WPINC.'/class-simplepie.php');
 
 $pgc_siteURL = get_option( 'siteurl' );
 
-// Pre-2.6 compatibility
-if (!defined('WP_CONTENT_URL'))
-  define('WP_CONTENT_URL', $pgc_siteURL.'/wp-content');
-if (!defined('WP_CONTENT_DIR') )
-  define('WP_CONTENT_DIR', ABSPATH.'wp-content');
-if (!defined('WP_PLUGIN_URL'))
-  define('WP_PLUGIN_URL', WP_CONTENT_URL.'/plugins');
-if (!defined('WP_PLUGIN_DIR'))
-  define( 'WP_PLUGIN_DIR', WP_CONTENT_DIR.'/plugins');
+$pgcPluginDirName = substr(strrchr(dirname(__FILE__), DIRECTORY_SEPARATOR), 1);
 
-$pgcPluginDirName = substr(dirname(__FILE__), strlen(WP_PLUGIN_DIR) + 1, strlen(__FILE__) - strlen(WP_PLUGIN_DIR)-1);
+if (is_multisite()) {
+// [alx359] new definition for Multisite support
+  $pgc_plugin_url = (is_ssl() ? 'https://':'http://').$_SERVER['HTTP_HOST'].'/wp-content/plugins/'.$pgcPluginDirName;
+} else {
+  $pgc_plugin_url = WP_PLUGIN_URL.'/'.$pgcPluginDirName;
+}
 
-define('PGC_PLUGIN_URL', WP_PLUGIN_URL.'/'.$pgcPluginDirName);
+define('PGC_PLUGIN_URL', $pgc_plugin_url);
 define('PGC_PLUGIN_DIR', WP_PLUGIN_DIR.'/'.$pgcPluginDirName);
 define('PGC_WP_ADMIN_URL', $pgc_siteURL.'/wp-admin');
 define('PGC_ERROR', 'Error is encountered');
@@ -68,7 +65,8 @@ function pgc_getNotWordPressTables() {
   global $wpdb;
 
   $wpTables = array('users', 'usermeta', 'posts', 'categories', 'post2cat', 'comments', 'links', 'link2cat', 'options',
-                        'postmeta', 'terms', 'term_taxonomy', 'term_relationships', 'commentmeta');
+                    'postmeta', 'terms', 'term_taxonomy', 'term_relationships', 'commentmeta', 'blogs', 'blog_versions',
+                    'site', 'sitemeta');
 
   $non_wp_tables = array();
   $query = "show tables";
@@ -326,7 +324,7 @@ function pgc_showTables($tables) {
       if ($table->plugin_name) {
         $html .= '<span style="color:'.$color.';">'.$table->plugin_name.'</span>';
       } else {
-        $html .= '<span style="color:red;">unknown</span>';
+        $html .= '<span style="color:red;">Unknown</span>';
       }
       $html .= '
             </td>
@@ -528,7 +526,7 @@ global $wpdb, $wp_queries;
       $html .= $deleteCheckBox.' <span style="color:'.$color.';">'.$tableName.'</span>';
       $html .= '
             </td>
-            <td><span style="color:'.$color.';">'.$column.'</span></td>';
+            <td><span style="color:'.$color.';">'.$column.'</span></td><td>';
       if ($plugin->plugin_name) {
         $html .= '<span style="color:'.$color.';">'.$plugin->plugin_name.'</span>';
       } else {
@@ -586,41 +584,5 @@ function pgc_deleteExtraColumnsFromWPTables() {
 }
 // end of pgc_deleteExtraColumnsFromWPTables()
 
-
-function pgc_shinephpNews() {
-
-$feed = new SimplePie();
-$feed->set_feed_url('http://www.shinephp.com/category/shinephp-wordpress-plugins/feed/');
-$feed->enable_cache(false);
-$feed->init();
-$feed->handle_content_type();
-$items = $feed->get_items();
-if ($items && sizeof($items)>0) {
-  echo '<ul>';
-  foreach ($items as $item) {
-    echo '<li><a href="'.$item->get_permalink().'">'.$item->get_title().'</a></li>';
-  }
-  echo '</ul>';
-} else {
-  echo '<ul><li>'.__('No items found.', 'thankyou') . '</li></ul>';
-}
-echo '<hr/>';
-echo '<span style="font-size: 12px; font-weight: bold;">'.__('Recent Posts:','plugins-lang-switch').'</span><br/>';
-$feed->set_feed_url('http://feeds.feedburner.com/shinephp');
-$feed->init();
-$feed->handle_content_type();
-$items = $feed->get_items();
-if ($items && sizeof($items)>0) {
-  echo '<ul>';
-  foreach ($items as $item) {
-    echo '<li><a href="'.$item->get_permalink().'" title="'.substr($item->get_description(), 0, 80).'">'.$item->get_title().'</a>&nbsp;&ndash; <span class="rss-date">'.$item->get_date('j F Y').'</span></li>';
-  }
-  echo '</ul>';
-} else {
-  echo '<ul><li>'.__('No items found.', 'thankyou') . '</li></ul>';
-}
-
-}
-// end of shinephpNews()
 
 ?>

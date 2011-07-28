@@ -108,7 +108,7 @@ pgc_showMessage($mess);
           <label for="show_hidden_tables"><?php _e('Show hidden tables', 'pgc'); ?></label>
         </div>
 
-        <div style="float: left; display: inline; margin-bottom:10px;">
+        <div style="float: left; display: inline; margin: -5px 0 10px 0;">
           <input type="button" name="scan_db" value="<?php _e('Scan', 'pgc'); ?>" title="<?php _e('Click this button to gather information how plugins use your WordPress database', 'pgc'); ?>" onclick="pgc_Actions('scan');"/>
         </div>
       </div>
@@ -143,12 +143,11 @@ pgc_showMessage($mess);
       <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/alessandro.png'; ?>);" target="_blank" title="<?php _e("For the help with Italian translation",'pgc');?>" href="http://technodin.org">Alessandro Mariani</a>
       <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/yoichi.png'; ?>);" target="_blank" title="<?php _e("For the help with Japanese translation",'pgc');?>" href="http://www.ad-minister.net">Yoichi</a>
       <a class="pgc_rsb_link" target="_blank" title="<?php _e("For the help with Spanish translation",'pgc');?>" >Melvis E. Leon Lopez</a>
-<?php
-      _e('Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated.','pgc');
+      <hr />
+      <a class="pgc_rsb_link" target="_blank" title="<?php _e("For the help with bug fix and contribution to source code",'pgc');?>" href="http://www.gigahub.com/">alx359</a>
+      <hr />
+<?php _e('Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated.','pgc');
 			echo pgc_displayBoxEnd();
-      echo pgc_displayBoxStart(__('More plugins from','pgc').' <a href="http://www.shinephp.com" title="ShinePHP.com">ShinePHP.com</a>', 'float: left; display: inline; margin-left: 10px; width: 350px;');
-      pgc_shinephpNews();
-      echo pgc_displayBoxEnd();
 ?>
 						</div>
 					</div>
