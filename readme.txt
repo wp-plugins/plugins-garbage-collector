@@ -59,6 +59,7 @@ If you have better translation for some phrases or found not translated phrases 
 
 == Changelog ==
 = 0.9.7 =
+* 28.07.2011
 * AJAX empty response for WordPress multi-site with subdomains is fixed - thanks to alx359. 
 * AJAX error processing is enhanced slightly.
 * Minor enhancements to plugin page CSS are made.
