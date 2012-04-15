@@ -60,7 +60,7 @@ If you have better translation for some phrases or found not translated phrases 
 
 == Changelog ==
 
-= 0.9.7 =
+= 0.9.8 =
 * 15.04.2012
 * Lithuanian translation is added, thanks to Vincent G.
 
