@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: garbage, collector, database, clear, unused tables, cleaner
 Requires at least: 3.0
 Tested up to: 3.4
-Stable tag: 0.9.8
+Stable tag: trunk
 
 It scans your WordPress database and shows what various things old plugins (which were deactivated or uninstalled) left in it. Cleanup is available.
 
@@ -40,6 +40,10 @@ You are welcome! Help me in the bug hunting, share with me new ideas about plugi
 
 
 = Translations =
+* Russian: [Vladimir Garagulya](http://shinephp.com)
+* Polish: [Esej Konrad Łącki](http://eudezet.org/ )
+
+Needs update:
 * Chinese: [Owen](http://mencase.com)
 * Czech: [Jindřich "Masterbill" Rubeš](http://rubes.eu)
 * French: [Simon](http://saymonz.net)
@@ -49,9 +53,7 @@ You are welcome! Help me in the bug hunting, share with me new ideas about plugi
 * Japanese: [Yoichi](http://www.ad-minister.net)
 * Latin: [Alessandro Mariani](http://technodin.org)
 * Lithuanian: [Vincent G](http://host1free.com)
-* Russian: [Vladimir Garagulya](http://shinephp.com)
 * Spanish: Melvis E. Leon Lopez
-
 
 Dear plugin User!
 If you wish to help me with this plugin translation I very appreciate it. Please send your language .po file to vladimir[at-sign]shinephp.com email. Do not forget include you site link in order I can show it with greetings for the translation help at shinephp.com, plugin settings page and in this readme.txt file.
@@ -59,6 +61,10 @@ If you have better translation for some phrases or found not translated phrases 
 
 
 == Changelog ==
+
+= 0.9.9 =
+* 16.07.2012
+* Polish translation is added, thanks to Esej Konrad Łącki.
 
 = 0.9.8 =
 * 15.04.2012
