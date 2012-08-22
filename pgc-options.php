@@ -13,14 +13,7 @@ require_once('pgc-lib.php');
 $shinephpFavIcon = PGC_PLUGIN_URL.'/images/vladimir.png';
 $mess = '';
 
-$showScanResults = false;
-if (isset($_POST['action']) && $_POST['action']=='scan') {
-  $time0 = time();
-  $showScanResults = true;
-  $tables = pgc_getNotWordPressTables();
-  scanPluginsForDbTablesUse(&$tables);
-  $time1 = time();
-} else if (isset($_POST['deleteTableAction'])) {
+if (isset($_POST['deleteTableAction'])) {
   $mess = pgc_deleteUnusedTablesFromDB();
 } else if (isset($_POST['deleteExtraColumnsAction'])) {
   $mess = pgc_deleteExtraColumnsFromWPTables();

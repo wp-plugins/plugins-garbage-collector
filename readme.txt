@@ -62,6 +62,10 @@ If you have better translation for some phrases or found not translated phrases 
 
 == Changelog ==
 
+= 0.9.10 =
+* 22.08.2012
+* Minor code cleanup and unused piece of code removing
+
 = 0.9.9 =
 * 16.07.2012
 * Polish translation is added, thanks to Esej Konrad Łącki.

@@ -129,8 +129,7 @@ function pgc_getNotWordPressTables() {
 
 
 function pgc_scanPluginsForDbTablesUse(&$tables) {
-  global $wpdb;
-
+  
   update_option('pgc_scanprogress_current', 1);
   update_option('pgc_scanprogress_status', 'Start scanning...');
   $plugins_list = get_plugins();
@@ -152,7 +151,6 @@ function pgc_scanPluginsForDbTablesUse(&$tables) {
         while (!feof($fh)) {
           $s = fgets($fh);
           $s = strtolower($s);
-          $pluginFound = false;
           foreach ($tables as $table) {
             if (!$table->plugin_name && (strpos($s, $table->name_without_prefix)!==false)) {
               $table->plugin_name = $plugin['Title'].' '.$plugin['Version'];
@@ -390,7 +388,8 @@ function pgc_displayColumnHeadersWP() {
 // Get all of the field names in the query from between the parens
 function pgc_extractFieldNames($query) {
 
-  $columns = array();
+  $columns = array(); 
+  $match2 = array();
   preg_match("|\((.*)\)|ms", strtolower($query), $match2);
   $line = trim($match2[1]);
   // Separate field lines into an array
@@ -400,6 +399,7 @@ function pgc_extractFieldNames($query) {
     $validfield = true;
     $field = trim($field);
     // Extract the field name
+    $fvalue = array();
     preg_match("|^([^ ]*)|", $field, $fvalue);
     $fieldname = strtolower(trim($fvalue[1], '`' ));
     // Verify the found field name
