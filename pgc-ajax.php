@@ -5,6 +5,12 @@
  *
  */
 
+//define('PGC_DEBUG_STEP', 1);
+
+if (defined('PGC_DEBUG_STEP') && PGC_DEBUG_STEP==1) {
+	echo '<pgc>debug step 1</pgc>';
+	return;
+}
 
 require_once('../../../wp-config.php');
 
@@ -31,9 +37,33 @@ if ($action=='scandbtables') {
 
   $result = '';
   if ($searchCriteria==1) {  // search none WP tables
-    $tables = pgc_getNotWordPressTables();
+
+		if (defined('PGC_DEBUG_STEP') && PGC_DEBUG_STEP==2) {
+			echo '<pgc>debug step 2</pgc>';
+			return;
+		}
+
+		$tables = pgc_getNotWordPressTables();
+		
+		if (defined('PGC_DEBUG_STEP') && PGC_DEBUG_STEP==3) {
+			echo '<pgc>debug step 3</pgc>';
+			return;
+		}
+		
     pgc_scanPluginsForDbTablesUse($tables);
+		
+		if (defined('PGC_DEBUG_STEP') && PGC_DEBUG_STEP==4) {
+			echo '<pgc>debug step 4</pgc>';
+			return;
+		}
+		
     $result = pgc_showTables($tables);
+		
+		if (defined('PGC_DEBUG_STEP') && PGC_DEBUG_STEP==5) {
+			echo '<pgc>debug step 5</pgc>';
+			return;
+		}
+		
   } else if ($searchCriteria==2) {  // check WP tables structure
     $result .= pgc_checkWpTablesStructure();
   } else {

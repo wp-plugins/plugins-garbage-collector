@@ -91,8 +91,8 @@ function pgc_getNotWordPressTables() {
       $query = "SHOW TABLE STATUS FROM ".DB_NAME." LIKE '$existingTable'";  // MySQL 4+ compatible query
       $result = $wpdb->get_results($query);
       $non_wp_table = new stdClass;
-      $non_wp_table->name = $existingTable;
-      $non_wp_table->name_without_prefix = str_replace($wpdb->prefix, '', $existingTable);
+      $non_wp_table->name = $existingTable1;
+      $non_wp_table->name_without_prefix = strtolower(str_replace($wpdb->prefix, '', $existingTable));
       $non_wp_table->records = $result[0]->Rows; //$result[0]->table_rows;
       $non_wp_table->kbytes = ROUND(($result[0]->Data_length + $result[0]->Index_length)/1024,2); //$result[0]->kbytes;
       $non_wp_table->plugin_name = '';
