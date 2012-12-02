@@ -40,6 +40,7 @@ You are welcome! Help me in the bug hunting, share with me new ideas about plugi
 
 
 = Translations =
+* Dutch - Nederlands: [Harald Labout](http://www.haraldlabout.nl)
 * Russian: [Vladimir Garagulya](http://shinephp.com)
 * Polish: [Esej Konrad Łącki](http://eudezet.org/ )
 
@@ -61,6 +62,11 @@ If you have better translation for some phrases or found not translated phrases 
 
 
 == Changelog ==
+
+= 0.9.12 =
+* 2.12.2012
+* Dutch - Nederlands translation was updated. Thanks to Harald Labout.
+* load_plugin_textdomain() call moved to the 'plugins_loaded' hook for higher compatibility with translation plugins.
 
 = 0.9.11 =
 * 31.10.2012

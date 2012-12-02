@@ -3,7 +3,7 @@
 Plugin Name: Plugins Garbage Collector
 Plugin URI: http://www.shinephp.com/plugins-garbage-collector-wordpress-plugin/
 Description: It scans your WordPress database and shows what various things old plugins which were deactivated, uninstalled) left in it. The list of additional database tables used by plugins with quant of records, size, and plugin name is shown.
-Version: 0.9.11
+Version: 0.9.12
 Author: Vladimir Garagulya
 Author URI: http://www.shinephp.com
 Text Domain: pgc
@@ -37,13 +37,25 @@ global $wp_version;
 
 require_once('pgc-lib.php');
 
-load_plugin_textdomain('pgc','', $pgcPluginDirName.'/lang');
 $pgc_plugin_name = __('Plugins Garbage Collector', 'pgc');
 
-$exit_msg = $pgc_plugin_name.__(' requires WordPress 3.0 or newer.', 'pgc').'<a href="http://codex.wordpress.org/Upgrading_WordPress">'.__('Please update!', 'pgc').'</a>';
+$exit_msg = $pgc_plugin_name.__(' requires WordPress 3.0 or newer.', 'pgc').' <a href="http://codex.wordpress.org/Upgrading_WordPress">'.__('Please update!', 'pgc').'</a>';
 if (version_compare($wp_version,"3.0","<")) {
 	return ($exit_msg);
 }
+
+
+/**
+ * Load translation files - linked to the 'plugins_loaded' hook
+ * 
+ */
+function pgc_load_translation() {
+
+	load_plugin_textdomain( 'pgc', '', dirname( plugin_basename( __FILE__ ) ) . DIRECTORY_SEPARATOR .'lang' );
+	
+}
+// end of pgc_load_translation()
+
 
 function pgc_actionsPage() {
   
@@ -131,7 +143,9 @@ function pgc_scriptsAction() {
 if (is_admin()) {
   // activation action
   register_activation_hook(__FILE__, "pgc_install");
-
+	// load translation
+	add_action('plugins_loaded', 'pgc_load_translation');
+	
   add_action('admin_init', 'pgc_init');
   // add a Settings link in the installed plugins page
   add_filter('plugin_action_links', 'pgc_plugin_action_links', 10, 2);
