@@ -3,7 +3,7 @@ Contributors: shinephp
 Donate link: http://www.shinephp.com/donate/
 Tags: garbage, collector, database, clear, unused tables, cleaner
 Requires at least: 3.0
-Tested up to: 3.5
+Tested up to: 3.9
 Stable tag: trunk
 
 It scans your WordPress database and shows what various things old plugins (which were deactivated or uninstalled) left in it. Cleanup is available.
