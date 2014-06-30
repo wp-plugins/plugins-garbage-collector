@@ -2,159 +2,250 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plugins Garbage Collector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-01 21:51+0700\n"
+"POT-Creation-Date: 2014-06-28 07:43+0700\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Vladimir <vladimir@shinephp.com>\n"
+"Last-Translator: Vladimir Garagulya <vladimir@shinephp.com>\n"
 "Language-Team: ShinePHP.com <vladimir@shinephp.com>\n"
+"Language: en_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: English\n"
-"X-Poedit-Country: RUSSIAN FEDERATION\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../pgc-options.php:56
-msgid "About this Plugin:"
+#: ../pgc-lib.php:250 ../pgc-lib.php:377
+msgid "Hide"
 msgstr ""
 
-#: ../pgc-options.php:57
-msgid "Author's website"
-msgstr ""
-
-#: ../pgc-options.php:58
-msgid "Plugin webpage"
-msgstr ""
-
-#: ../pgc-options.php:59
-#: ../plugins-garbage-collector.php:98
-msgid "Changelog"
-msgstr ""
-
-#: ../pgc-options.php:60
-msgid "FAQ"
-msgstr ""
-
-#: ../pgc-options.php:61
-msgid "Donate"
-msgstr ""
-
-#: ../pgc-options.php:63
-msgid "Greetings:"
-msgstr ""
-
-#: ../pgc-options.php:64
-msgid "It's me, the author"
-msgstr ""
-
-#: ../pgc-options.php:65
-msgid "For the help with French translation"
-msgstr ""
-
-#: ../pgc-options.php:66
-msgid "For the help with German translation"
-msgstr ""
-
-#: ../pgc-options.php:67
-msgid "For the help with Indonesian translation"
-msgstr ""
-
-#: ../pgc-options.php:68
-msgid "For the help with Italian translation"
-msgstr ""
-
-#: ../pgc-options.php:69
-msgid "For the help with Japanese translation"
-msgstr ""
-
-#: ../pgc-options.php:70
-msgid "For the help with Spanish translation"
-msgstr ""
-
-#: ../pgc-options.php:71
-msgid "For the help with Dutch translation"
-msgstr ""
-
-#: ../pgc-options.php:72
-msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
-msgstr ""
-
-#: ../pgc-options.php:81
-msgid "Scanning"
-msgstr ""
-
-#: ../pgc-options.php:85
-msgid "will take some time. Please confirm to continue"
-msgstr ""
-
-#: ../pgc-options.php:104
-msgid "Select at least one table before click on Delete button"
-msgstr ""
-
-#: ../pgc-options.php:107
-msgid "Delete database tables last confirmation: Click \"Cancel\" if you have any doubt."
-msgstr ""
-
-#: ../pgc-options.php:115
-msgid "Click &lt;Scan&gt; to gather information how plugins use your WordPress database"
-msgstr ""
-
-#: ../pgc-options.php:119
-#: ../plugins-garbage-collector.php:88
-msgid "Scan"
-msgstr ""
-
-#: ../pgc-options.php:130
+#: ../pgc-lib.php:251 ../pgc-lib.php:378
 msgid "Table Name"
 msgstr ""
 
-#: ../pgc-options.php:131
+#: ../pgc-lib.php:252
 msgid "Records #"
 msgstr ""
 
-#: ../pgc-options.php:132
+#: ../pgc-lib.php:253
 msgid "KBytes #"
 msgstr ""
 
-#: ../pgc-options.php:133
+#: ../pgc-lib.php:254 ../pgc-lib.php:380
 msgid "Plugin Name"
 msgstr ""
 
-#: ../pgc-options.php:134
+#: ../pgc-lib.php:255 ../pgc-lib.php:381
 msgid "Plugin State"
 msgstr ""
 
-#: ../pgc-options.php:141
-msgid "Let's see what tables in your database do not belong to the core WordPress installation:"
+#: ../pgc-lib.php:263
+msgid ""
+"Let's see what tables in your database do not belong to the core WordPress "
+"installation:"
 msgstr ""
 
-#: ../pgc-options.php:218
+#: ../pgc-lib.php:343 ../pgc-lib.php:546
+msgid ""
+"Some tables are hidden by you. Turn on \"Show hidden DB tables\" option and "
+"click \"Scan\" button again to show them."
+msgstr ""
+
+#: ../pgc-lib.php:351
 msgid "Delete Tables"
 msgstr ""
 
-#: ../pgc-options.php:222
+#: ../pgc-lib.php:355 ../pgc-lib.php:558
 msgid "Attention!"
 msgstr ""
 
-#: ../pgc-options.php:222
-msgid "Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Tables</code> button."
+#: ../pgc-lib.php:356
+msgid ""
+"Operation rollback is not possible. Consider to make database backup first. "
+"Please double think before click <code>Delete Tables</code> button."
 msgstr ""
 
-#: ../pgc-options.php:232
+#: ../pgc-lib.php:365
 msgid "Congratulations! It seems that your WordPress database is clean."
 msgstr ""
 
-#: ../plugins-garbage-collector.php:41
+#: ../pgc-lib.php:379
+msgid "Extra Field"
+msgstr ""
+
+#: ../pgc-lib.php:554
+msgid "Delete Extra Columns"
+msgstr ""
+
+#: ../pgc-lib.php:559
+msgid ""
+"Operation rollback is not possible. Consider to make database backup first. "
+"Please double think before click <code>Delete Extra Columns</code> button."
+msgstr ""
+
+#: ../pgc-lib.php:568
+msgid ""
+"Congratulations! It seems that your WordPress database tables structure is "
+"not changed"
+msgstr ""
+
+#: ../pgc-lib.php:581
+msgid ""
+"This feature is still in production and will be realized in the next version"
+msgstr ""
+
+#: ../pgc-options.php:48
+msgid "Turn on at least one Search checkbox before start Scan process!"
+msgstr ""
+
+#: ../pgc-options.php:52
+msgid "Scanning"
+msgstr ""
+
+#: ../pgc-options.php:56
+msgid "will take some time. Please confirm to continue"
+msgstr ""
+
+#: ../pgc-options.php:79
+msgid "Select at least one table before click on Delete button"
+msgstr ""
+
+#: ../pgc-options.php:82
+msgid ""
+"Delete database tables last confirmation: Click \"Cancel\" if you have any "
+"doubt."
+msgstr ""
+
+#: ../pgc-options.php:92
+msgid "Search DB for tables created by plugins"
+msgstr ""
+
+#: ../pgc-options.php:93
+msgid "Search none-WP tables"
+msgstr ""
+
+#: ../pgc-options.php:96
+msgid ""
+"Search DB for changes which plugins made to the original WP tables structure"
+msgstr ""
+
+#: ../pgc-options.php:97
+msgid "Search WP tables structure changes (beta - experimental)"
+msgstr ""
+
+#: ../pgc-options.php:100
+msgid "Include tables which are hidden by your request to the search results"
+msgstr ""
+
+#: ../pgc-options.php:101
+msgid "Show hidden tables"
+msgstr ""
+
+#: ../pgc-options.php:105 ../plugins-garbage-collector.php:100
+msgid "Scan"
+msgstr ""
+
+#: ../pgc-options.php:105
+msgid ""
+"Click this button to gather information how plugins use your WordPress "
+"database"
+msgstr ""
+
+#: ../pgc-options.php:120
+msgid "About this Plugin:"
+msgstr ""
+
+#: ../pgc-options.php:121
+msgid "Author's website"
+msgstr ""
+
+#: ../pgc-options.php:122
+msgid "Plugin webpage"
+msgstr ""
+
+#: ../pgc-options.php:123 ../plugins-garbage-collector.php:110
+msgid "Changelog"
+msgstr ""
+
+#: ../pgc-options.php:124
+msgid "FAQ"
+msgstr ""
+
+#: ../pgc-options.php:125
+msgid "Donate"
+msgstr ""
+
+#: ../pgc-options.php:128
+msgid "Greetings:"
+msgstr ""
+
+#: ../pgc-options.php:130
+msgid "It's me, the author"
+msgstr ""
+
+#: ../pgc-options.php:131
+msgid "For the help with Chinese translation"
+msgstr ""
+
+#: ../pgc-options.php:132
+msgid "For the help with Czech translation"
+msgstr ""
+
+#: ../pgc-options.php:133
+msgid "For the help with Dutch translation"
+msgstr ""
+
+#: ../pgc-options.php:134
+msgid "For the help with French translation"
+msgstr ""
+
+#: ../pgc-options.php:135
+msgid "For the help with German translation"
+msgstr ""
+
+#: ../pgc-options.php:136
+msgid "For the help with Indonesian translation"
+msgstr ""
+
+#: ../pgc-options.php:137
+msgid "For the help with Italian translation"
+msgstr ""
+
+#: ../pgc-options.php:138
+msgid "For the help with Japanese translation"
+msgstr ""
+
+#: ../pgc-options.php:139
+msgid "For the help with Lithuanian translation"
+msgstr ""
+
+#: ../pgc-options.php:140
+msgid "For the help with Polish translation"
+msgstr ""
+
+#: ../pgc-options.php:141
+msgid "For the help with Spanish translation"
+msgstr ""
+
+#: ../pgc-options.php:143
+msgid "For the help with bug fix and contribution to source code"
+msgstr ""
+
+#: ../pgc-options.php:145
+msgid ""
+"Do you wish to see your name with link to your site here? You are welcome! "
+"Your help with translation and new ideas are very appreciated."
+msgstr ""
+
+#: ../plugins-garbage-collector.php:40
 msgid "Plugins Garbage Collector"
 msgstr ""
 
-#: ../plugins-garbage-collector.php:43
-msgid " requires WordPress 2.9 or newer."
+#: ../plugins-garbage-collector.php:42
+msgid " requires WordPress 3.0 or newer."
 msgstr ""
 
-#: ../plugins-garbage-collector.php:43
+#: ../plugins-garbage-collector.php:42
 msgid "Please update!"
 msgstr ""
-

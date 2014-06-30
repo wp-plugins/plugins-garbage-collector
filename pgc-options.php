@@ -137,7 +137,7 @@ pgc_showMessage($mess);
       <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/alessandro.png'; ?>);" target="_blank" title="<?php _e("For the help with Italian translation",'pgc');?>" href="http://technodin.org">Alessandro Mariani</a>
       <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/yoichi.png'; ?>);" target="_blank" title="<?php _e("For the help with Japanese translation",'pgc');?>" href="http://www.ad-minister.net">Yoichi</a>
       <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/host1free.png'; ?>)" target="_blank" title="<?php _e("For the help with Lithuanian translation", 'pgc'); ?>" href="http://host1free.com">Vincent G</a>
-      <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/esej.png'; ?>)" target="_blank" title="<?php _e("For the help with Polish translation", 'pgc'); ?>" href="http://eudezet.org/">Esej Konrad Łącki</a>
+      <a class="pgc_rsb_link" style="background-image:url(<?php echo PGC_PLUGIN_URL.'/images/paleosmak.png'; ?>)" target="_blank" title="<?php _e("For the help with Polish translation", 'pgc'); ?>" href="http://paleosmak.pl">Grzegorz Janoszka</a>
       <a class="pgc_rsb_link" target="_blank" title="<?php _e("For the help with Spanish translation",'pgc');?>" >Melvis E. Leon Lopez</a>
       <hr />
       <a class="pgc_rsb_link" target="_blank" title="<?php _e("For the help with bug fix and contribution to source code",'pgc');?>" href="http://www.gigahub.com/">alx359</a>
