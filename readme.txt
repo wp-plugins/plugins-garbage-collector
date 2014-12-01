@@ -62,6 +62,11 @@ If you have better translation for some phrases or found not translated phrases 
 
 
 == Changelog ==
+= 0.9.15 =
+* 01.12.2014
+* Fix for fatal error during activation with fresh install of WordPress 4.0 (missed WPLANG constant caused plugin to stop execution).
+  Unfortunately it worked fine under WP 4.0 with wp-config.php from previous version with WPLANG defined.
+
 = 0.9.14 =
 * 30.06.2014
 * Polish translation was updated. Thanks to Grzegorz Janoszka.

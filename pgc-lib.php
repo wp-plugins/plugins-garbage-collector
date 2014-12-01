@@ -6,11 +6,10 @@
  */
 
 
-if (!defined("WPLANG")) {
+if (!function_exists("get_option")) {
+  header('HTTP/1.0 403 Forbidden');
   die;  // Silence is golden, direct call is prohibited
 }
-
-require_once(ABSPATH.WPINC.'/class-simplepie.php');
 
 $pgc_siteURL = get_option( 'siteurl' );
 
